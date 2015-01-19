@@ -43,6 +43,6 @@ build_deps:
 	-git submodule add https://github.com/thoppe/md2reveal.git md2reveal
 
 	git submodule update --init
-	cd reveal.js && git checkout v0.3-1122-g8b8cc60	&& cd ..
+	cd reveal.js && git checkout v0.3-1438-g9a89e39 && cd ..
 	cd md2reveal && git pull origin master && cd ..
 	git submodule status

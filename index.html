@@ -40,17 +40,131 @@
 <link rel="stylesheet" href="md2reveal/css/one_moz.css" id="theme">
 <br>
 <p>
-<h4>intrinsically</h4><h3>disordered</h3><h2>proteins</h2></p>
+<h2>Multiscale protein modeling</h2><h3>Disorder & aggregation</h3></p>
 <br>
 <hr>
 <br>
 <p>
-NIH, NIDDK, LBG<br><strong><a href="http://thoppe.github.io/">Travis Hoppe</a></strong>, Allen Minton, Di Wu<br><a href="https://github.com/thoppe/research_pres_macrocharge">(deck source)</a></p>
+<strong><a href="http://thoppe.github.io/">Travis Hoppe</a></strong>, <a href="https://github.com/thoppe/Presentation_Research_IDP">(deck source)</a></p>
+<br>
+<p>
+National Institutes of Health<br>National Institute of Diabetes and Digestive and Kidney Diseases<br>Laboratory of Chemical Physics, Theoretical Biophysical Chemistry</p>
+</section><section class="vertical-slide"  data-background-transition="none">
+<p>
+<h2>People involved</h2><h3>Allen Minton, Di Wu</h3></p>
+<img class="" src="images/people/minton.jpg" height="250">
+<img class="" src="images/people/di.jpg" height="250">
+<p>
+<h3>Robert Best, Wenwei Zheng</h3></p>
+<img class="" src="images/people/robert.jpg" height="250">
 </section>
 </section><section class="vertical-stack">
 <section class="vertical-slide"  data-background-transition="none">
 <p>
-content!</p>
+<h1>Multiscale</h1></p>
+<br>
+<p>
+<h2>Length</h2></p>
+<br>
+<p>
+<h2>Time</h2></p>
+</section>
+</section><section class="vertical-stack">
+<section class="vertical-slide"  data-background-transition="none">
+<p>
+<h1>Protein Structure</h1><h3>Four levels of complexity:</h3></p>
+<br>
+<p>
+<div display='inline' align='left'><h3>Primary structure (sequence)</h3></div><div display='inline' align='left'><h3>Secondary structure (helices, sheets)</h3></div><div display='inline' align='left'><h3>Tertiary structure (3D structure)</h3></div><div display='inline' align='left'><h3>Quaternary structure (protein complex)</h3></div></p>
+</section><section class="vertical-slide"  data-background-transition="none">
+<p>
+<h2>Primary Structure</h2>Twenty residue "alphabet" forms polypeptide chain</p>
+<img class="" src="images/common_aa_chart.png" width="1200">
+<br>
+<p>
+<div class="reference_footnote">Chemical Structure of the Twenty Common Amino Acids, <a href="http://www.compoundchem.com/2014/09/16/aminoacids/">Compound Interest</a></div></p>
+</section><section class="vertical-slide"  data-background-transition="none">
+<p>
+<h2>Secondary & Tertiary Structure</h2></p>
+<img class="" src="images/1ova/1ova_lines.png" width="380">
+<img class="" src="images/1ova/1ova_spheres.png" width="380">
+<img class="" src="images/1ova/1ova_cartoon.png" width="380">
+<br>
+<p>
+From sequence to structure</p>
+<pre><code class=python>GSIGAASMEF CFDVFKELKV HHANENIFYC PIAIMSALAM VYLGAKDSTR TQINKVVRFD KLPGFGDEIE AQCGTSVNVH 
+SSLRDILNQI TKPNDVYSFS LASRLYAEER YPILPEYLQC VKELYRGGLE PINFQTAADQ ARELINSWVE SQTNGIIRNV 
+LQPSSVDSQT AMVLVNAIVF KGLWEKAFKD EDTQAMPFRV TEQESKPVQM MYQIGLFRVA SMASEKMKIL ELPFASGTMS 
+MLVLLPDEVS GLEQLESIIN FEKLTEWTSS NVMEERKIKV YLPRMKMEEK YNLTSVLMAM GITDVFSSSA NLSGISSAES 
+LKISQAVHAA HAEINEAGRE VVGGAEAGVD AASVSEEFRA DHPFLFCIKH IATNAVLFFG RCVSP</code></pre>
+<br>
+<p>
+<div class="reference_footnote">Ovalbumin, Egg white protein <a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">PDB 1OVA</a>, Crystal Structure, <a href="http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract">Carrell</a></div></p>
+</section>
+</section><section class="vertical-stack">
+<section class="vertical-slide"  data-background-transition="none">
+<p>
+<h2>Protein folding problem</h2></p>
+<br>
+<p>
+Predict structure from sequence<h3>Sequence <svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 8.859375 5.203125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <g>
+   <symbol id="equation_OQRLC_0" overflow="visible">
+    <path d="M 8.3125 -2.296875 C 7.765625 -1.875 7.5 -1.46875 7.421875 -1.328125 C 6.96875 -0.640625 6.890625 -0.015625 6.890625 -0.015625 C 6.890625 0.109375 7.015625 0.109375 7.09375 0.109375 C 7.25 0.109375 7.265625 0.09375 7.3125 -0.09375 C 7.53125 -1.0625 8.125 -1.90625 9.25 -2.359375 C 9.375 -2.40625 9.40625 -2.421875 9.40625 -2.5 C 9.40625 -2.5625 9.34375 -2.59375 9.328125 -2.609375 C 8.875 -2.765625 7.671875 -3.265625 7.296875 -4.9375 C 7.265625 -5.0625 7.25 -5.09375 7.09375 -5.09375 C 7.015625 -5.09375 6.890625 -5.09375 6.890625 -4.96875 C 6.890625 -4.953125 6.984375 -4.328125 7.390625 -3.65625 C 7.59375 -3.359375 7.890625 -3.015625 8.3125 -2.6875 L 0.90625 -2.6875 C 0.734375 -2.6875 0.546875 -2.6875 0.546875 -2.5 C 0.546875 -2.296875 0.734375 -2.296875 0.90625 -2.296875 Z M 8.3125 -2.296875 " style="stroke:none;"/>
+   </symbol>
+  </g>
+ </defs>
+ <g id="surface1">
+  <g>
+   <use x="-0.546875" xlink:href="#equation_OQRLC_0" y="5.09375"/>
+  </g>
+ </g>
+</svg> Structure <svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 8.859375 5.203125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <g>
+   <symbol id="equation_OQRLC_0" overflow="visible">
+    <path d="M 8.3125 -2.296875 C 7.765625 -1.875 7.5 -1.46875 7.421875 -1.328125 C 6.96875 -0.640625 6.890625 -0.015625 6.890625 -0.015625 C 6.890625 0.109375 7.015625 0.109375 7.09375 0.109375 C 7.25 0.109375 7.265625 0.09375 7.3125 -0.09375 C 7.53125 -1.0625 8.125 -1.90625 9.25 -2.359375 C 9.375 -2.40625 9.40625 -2.421875 9.40625 -2.5 C 9.40625 -2.5625 9.34375 -2.59375 9.328125 -2.609375 C 8.875 -2.765625 7.671875 -3.265625 7.296875 -4.9375 C 7.265625 -5.0625 7.25 -5.09375 7.09375 -5.09375 C 7.015625 -5.09375 6.890625 -5.09375 6.890625 -4.96875 C 6.890625 -4.953125 6.984375 -4.328125 7.390625 -3.65625 C 7.59375 -3.359375 7.890625 -3.015625 8.3125 -2.6875 L 0.90625 -2.6875 C 0.734375 -2.6875 0.546875 -2.6875 0.546875 -2.5 C 0.546875 -2.296875 0.734375 -2.296875 0.90625 -2.296875 Z M 8.3125 -2.296875 " style="stroke:none;"/>
+   </symbol>
+  </g>
+ </defs>
+ <g id="surface1">
+  <g>
+   <use x="-0.546875" xlink:href="#equation_OQRLC_0" y="5.09375"/>
+  </g>
+ </g>
+</svg> Function</h3></p>
+<br>
+<img class="" src="images/energy_landscape.jpg" height="300">
+<img class="" src="images/T42morphs.gif" height="300">
+<br>
+<p>
+<div class="reference_footnote">Energy Landscape by <a href="http://rsta.royalsocietypublishing.org/content/363/1827/453">Wolynes</a>, Folding Example by of NK-lysin <a href="http://www.ncbi.nlm.nih.gov/pubmed/9485510">Jones</a>.</div></p>
+</section>
+</section><section class="vertical-stack">
+<section class="vertical-slide"  data-background-transition="none">
+<p>
+Only works when you have a well-defined structure...</p>
+<br>
+<p>
+IDP (intrinsically disordered proteins) do not!</p>
+</section>
+</section><section class="vertical-stack">
+<section class="vertical-slide"  data-background-transition="none">
+<p>
+<h2>Intrinsically disordered proteins</h2></p>
+<br>
+<p>
+<h4>Structure</h4></p>
+<ul><li>Different primary structure (propensity)</li>
+<li>More charged, less hydrophobic and aromatic residues</li>
+<li>Still may form secondary structure</li>
+<li>Lacks tertiary structure (disorder!)</li></ul>
+<br>
+<p>
+<h4>Function</h4></p>
+<ul><li>Specificity, low affinity</li>
+<li>Often found in signaling pathways, centers of protein hubs</li></ul>
 </section>
 </section>
     </div></div>

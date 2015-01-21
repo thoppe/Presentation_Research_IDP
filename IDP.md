@@ -7,9 +7,9 @@
 
 *[Travis Hoppe](http://thoppe.github.io/)*, [(deck source)](https://github.com/thoppe/Presentation_Research_IDP)
 
-National Institutes of Health
-National Institute of Diabetes and Digestive and Kidney Diseases
-Laboratory of Chemical Physics, Theoretical Biophysical Chemistry
+National Institutes of Health (NIH)
+National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)
+Laboratory of Chemical Physics (LCP), Theoretical Biophysical Chemistry
 
 
 ====*
@@ -20,6 +20,7 @@ Laboratory of Chemical Physics, Theoretical Biophysical Chemistry
 !(images/people/di.jpg)     <<height:250>>
 ### Robert Best, Wenwei Zheng
 !(images/people/robert.jpg) <<height:250>>
+!(images/people/wenwei.jpg) <<height:250>>
 
 ====
 
@@ -86,15 +87,39 @@ IDP (intrinsically disordered proteins) do not!
 
 ## Intrinsically disordered proteins
 
-#### Structure
-+ Different primary structure (propensity)
-+ More charged, less hydrophobic and aromatic residues
+### Structure
++ Lacks *tertiary structure* (disorder!)
 + Still may form secondary structure
-+ Lacks tertiary structure (disorder!)
++ Different *primary structure* (residue propensity)
++ More charged, less hydrophobic and aromatic residues
 
-#### Function
-+ Specificity, low affinity
+### Function
 + Often found in signaling pathways, centers of protein hubs
++ Specificity, low affinity
+
+### Modeling
++ Tradiational methods are problematic (no funnel!)
+
+====
+
+## Statistical Potentials
+Residue-residue interactions, quasi-chemical lattice-gas
+
+## $U_{a,b} = -kT \ln \frac{p_{\text{obs}}(a,b)}{p_\text{exp}(a,b)} \approx -kT \ln \frac{N_\text{obs}(a,b)}{N_\text{exp}(a,b)}$
+
+!(images/1pcy/1pcy_cartoon.png) <<height:300>>
+!(images/1pcy/1pcy_sticks.png) <<height:300>>
+!(images/1pcy/1pcy_ultra_sidechain.png) <<height:300>>
+!(images/1pcy/1pcy_res_res.png) <<height:300>>
+
+====*
+
+### Residue-residue interaction matrix
+
+Most famous, Miyaza and Jernigan (MJ) matrix*.
+!(images/mj_potential/MJ_matrix.png) <<height:500>>
+
+&& *Other statisitical potentials: [Tanaka and Scheraga](http://pubs.acs.org/doi/abs/10.1021/ma60054a013) (1976), [Spil](http://www.ncbi.nlm.nih.gov/pubmed/2359125) (1990), [Miyaza and Jernigan](http://www.ncbi.nlm.nih.gov/pubmed/8604144) (1996), <br> [Betancourt and Thirumalai](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/) (1999), [Skolnick, Kolinski and Ortiz](http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract) (2000)
 
 
 

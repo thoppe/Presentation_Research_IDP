@@ -1,5 +1,3 @@
-{"theme":"md2reveal/css/one_moz.css"}
-
 ## Multiscale protein modeling 
 ### Disorder & aggregation
 
@@ -115,7 +113,7 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ====*
 
 ### Residue-residue interaction matrix, MJ*
-!(images/mj_potential/MJ_matrix.png) <<height:600>>
+!(images/mj_potential/MJ_matrix.png)  <<transparent>> <<height:600>>
 
 && *Other statisitical potentials: [Tanaka and Scheraga](http://pubs.acs.org/doi/abs/10.1021/ma60054a013) (1976), [Spil](http://www.ncbi.nlm.nih.gov/pubmed/2359125) (1990), [Miyaza and Jernigan](http://www.ncbi.nlm.nih.gov/pubmed/8604144) (1996), <br> [Betancourt and Thirumalai](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/) (1999), [Skolnick, Kolinski and Ortiz](http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract) (2000)
 

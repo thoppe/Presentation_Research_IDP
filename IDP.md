@@ -150,14 +150,16 @@ DIAGONALIZED MJ MATRIX HERE
 MF Energy distributions
 
 INSERT: AA propensities
-INSERT: E_DIST plot
 INSERT Kyle-Doolittle plot
+
+!(images/mean_field_calc/average_self_energy.png)
+
 
 ====*
 
 MJ contact energy can reproduce MF energy!
-
-INSERT: IMAGE MJ vs MF
+UPDATE TO MORE ACCURATE PICTURE
+!(images/MJ_MF_energy_cmp.png)
 
 ====
 

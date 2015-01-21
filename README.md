@@ -2,4 +2,4 @@
 
 #### Travis Hoppe
 
-Uses `[md2reveal](https://github.com/thoppe/md2reveal)` to generate the slides.
+Uses [`md2reveal`](https://github.com/thoppe/md2reveal) to generate the slides.

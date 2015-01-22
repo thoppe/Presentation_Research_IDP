@@ -9,16 +9,6 @@ National Institutes of Health (NIH)
 National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)
 Laboratory of Chemical Physics (LCP), Theoretical Biophysical Chemistry
 
-====*
-
-## People involved
-### Allen Minton, Di Wu
-!(images/people/minton.jpg) <<height:250>>
-!(images/people/di.jpg)     <<height:250>>
-### Robert Best, Wenwei Zheng
-!(images/people/robert.jpg) <<height:250>>
-!(images/people/wenwei.jpg) <<height:250>>
-
 ====
 
 ## BIO*PHYSICS*
@@ -27,6 +17,15 @@ Laboratory of Chemical Physics (LCP), Theoretical Biophysical Chemistry
 ### Length
 
 ### Time
+
+====*
+## People involved
+### Robert Best, Wenwei Zheng
+!(images/people/robert.jpg) <<height:250>>
+!(images/people/wenwei.jpg) <<height:250>>
+### Allen Minton, Di Wu
+!(images/people/minton.jpg) <<height:250>>
+!(images/people/di.jpg)     <<height:250>>
 
 ====*
 
@@ -122,15 +121,15 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ====*
 
 ### Residue-residue interaction matrix, MJ
-!(images/mj_potential/MJ_matrix.png)  <<transparent>> <<height:500>>
+!(images/mj_potential/MJ_matrix.png)  <<transparent; height:700>>
 
 && Other statistical potentials: [Tanaka and Scheraga](http://pubs.acs.org/doi/abs/10.1021/ma60054a013) (1976), [Spil](http://www.ncbi.nlm.nih.gov/pubmed/2359125) (1990), [Miyaza and Jernigan](http://www.ncbi.nlm.nih.gov/pubmed/8604144) (1996),<br>[Betancourt and Thirumalai](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/) (1999), [Skolnick, Kolinski and Ortiz](http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract) (2000)
 
 ====*
 
 ### MJ matrix reveals biophysical structure
+!(images/mj_potential/MJ_matrix_remaped.png)  <<transparent; height:700>>
 
-DIAGONALIZED MJ MATRIX HERE
 
 ====
 
@@ -143,16 +142,16 @@ DIAGONALIZED MJ MATRIX HERE
 
 ====*
 MJ contact energy can reproduce MF energy!
-!(images/estimation_MF_MJ.png)       <<transparent>> <<width:800>> 
+!(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
 ====*
 MJ contact energy can reproduce MF energy!
-!(images/estimation_MF_MJ_per_N.png) <<transparent>>  <<width:800>> 
+!(images/estimation_MF_MJ_per_N.png) <<transparent; height:700>> 
 ====
 MF Energy distributions: Physically reasonable
-!(images/mean_field_calc/average_self_energy.png)  <<height:325>>
-!(images/mean_field_calc/residue_propensity.png)   <<height:325>>
-!(images/mean_field_calc/MF_vs_hydrophilicity.png) <<height:325>>
-!(images/mean_field_calc/MF_vs_Garbuzynskiy.png)   <<height:325>>
+!(images/mean_field_calc/average_self_energy.png)  <<transparent; height:325>>
+!(images/mean_field_calc/residue_propensity.png)   <<transparent; height:325>>
+!(images/mean_field_calc/MF_vs_hydrophilicity.png) <<transparent; height:325>>
+!(images/mean_field_calc/MF_vs_Garbuzynskiy.png)   <<transparent; height:325>>
 
 && [IDP Propensity](http://www.ncbi.nlm.nih.gov/pubmed/15657106), [Kyte-Doolittle](http://www.ncbi.nlm.nih.gov/pubmed/7108955), [Garbuzynskiy index](http://www.ncbi.nlm.nih.gov/pubmed/20019059)
 

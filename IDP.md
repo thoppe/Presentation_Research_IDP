@@ -118,35 +118,33 @@ Residue-residue interactions, quasi-chemical lattice-gas
 
 && [Protein database: Top 8000](http://kinemage.biochem.duke.edu/databases/top8000.php), Richardson
 
-====*
+====*<<transistion:none>>
 
 ### Residue-residue interaction matrix, MJ
 !(images/mj_potential/MJ_matrix.png)  <<transparent; height:700>>
 
 && Other statistical potentials: [Tanaka and Scheraga](http://pubs.acs.org/doi/abs/10.1021/ma60054a013) (1976), [Spil](http://www.ncbi.nlm.nih.gov/pubmed/2359125) (1990), [Miyaza and Jernigan](http://www.ncbi.nlm.nih.gov/pubmed/8604144) (1996),<br>[Betancourt and Thirumalai](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/) (1999), [Skolnick, Kolinski and Ortiz](http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract) (2000)
 
-====*
-
+====*<<transistion:none>>
 ### MJ matrix reveals biophysical structure
 !(images/mj_potential/MJ_matrix_remaped.png)  <<transparent; height:700>>
-
-
 ====
 
 ### MJ Contact energy, from structure
 # $U_\text{MJ} = \sum_{i=1}^N \sum_{j>i}^N E_{ij}  \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
-
+====+
+<br>
 ### Mean-field (MF) energy, from sequence
 # $U_{\text{MF}} = \sum_{\alpha=1}^{20} \sum_{\beta=\alpha}^{20} E_{\alpha \beta} \cdot n_{\text{contact}}(\alpha, \beta)$
 ### $n_{\text{contact}}(\alpha, \beta) = X_{\alpha} X_{\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
-====*
+====*<<transistion:none>>
 MJ contact energy can reproduce MF energy!
 !(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
-====*
+====*<<transistion:none>>
 MJ contact energy can reproduce MF energy!
 !(images/estimation_MF_MJ_per_N.png) <<transparent; height:700>> 
-====
+====<<transistion:default>>
 MF Energy distributions: Physically reasonable
 !(images/mean_field_calc/average_self_energy.png)  <<transparent; height:325>>
 !(images/mean_field_calc/residue_propensity.png)   <<transparent; height:325>>

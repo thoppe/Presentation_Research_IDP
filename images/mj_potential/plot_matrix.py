@@ -81,7 +81,7 @@ plt.savefig("MJ_matrix.png",
 
 
 plot_residue_matrix(MJ2,rename=True)
-plt.savefig("MJ_matrix_remaped.png",
+plt.savefig("MJ_matrix_remapped.png",
             bbox_inches='tight',transparent=True)
 
 #plt.show()

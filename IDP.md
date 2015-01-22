@@ -75,12 +75,12 @@ From sequence to structure
 Predict structure from sequence
 ### Sequence $\rightarrow$ Structure $\rightarrow$ Function
 
-!(images/energy_landscape.jpg)  <<height:300>>
-!(images/T42morphs.gif)  <<height:300>>
+!(images/energy_landscape.jpg)  <<height:300; transparent>>
+!(images/ww_fold.m4v) <<height:300>>
 
 Native structure, folding pathways, ...
 
-&& Energy Landscape by [Wolynes](http://rsta.royalsocietypublishing.org/content/363/1827/453), Folding Example of NK-lysin by [Jones](http://www.ncbi.nlm.nih.gov/pubmed/9485510).
+&& Energy Landscape by [Wolynes](http://rsta.royalsocietypublishing.org/content/363/1827/453), Folding Example of WW-domain by [Best](http://pubs.acs.org/doi/abs/10.1021/jp102575b), 2010.
 
 ====*
 Only works when you have a well-defined structure...
@@ -127,7 +127,7 @@ Residue-residue interactions, quasi-chemical lattice-gas
 
 ====*<<transistion:none>>
 ### MJ matrix reveals biophysical structure
-!(images/mj_potential/MJ_matrix_remaped.png)  <<transparent; height:700>>
+!(images/mj_potential/MJ_matrix_remapped.png)  <<transparent; height:700>>
 ====
 
 ### MJ Contact energy, from structure
@@ -139,12 +139,14 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ### $n_{\text{contact}}(\alpha, \beta) = X_{\alpha} X_{\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
 ====*<<transistion:none>>
-MJ contact energy can reproduce MF energy!
+MJ contact energy reproduces MF energy
 !(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
+
 ====*<<transistion:none>>
-MJ contact energy can reproduce MF energy!
+Energy per residue still shows good correlation
 !(images/estimation_MF_MJ_per_N.png) <<transparent; height:700>> 
-====<<transistion:default>>
+
+====*<<transistion:none>>
 MF Energy distributions: Physically reasonable
 !(images/mean_field_calc/average_self_energy.png)  <<transparent; height:325>>
 !(images/mean_field_calc/residue_propensity.png)   <<transparent; height:325>>
@@ -153,6 +155,11 @@ MF Energy distributions: Physically reasonable
 
 && [IDP Propensity](http://www.ncbi.nlm.nih.gov/pubmed/15657106), [Kyte-Doolittle](http://www.ncbi.nlm.nih.gov/pubmed/7108955), [Garbuzynskiy index](http://www.ncbi.nlm.nih.gov/pubmed/20019059)
 
+====<<transistion:default>>
+
+## Protein Networks
+
+Model protein networks 
 
 ====*
 
@@ -161,28 +168,31 @@ MF Energy distributions: Physically reasonable
 Pairwise decomposition of energetic terms of protein complex, A--B
 ### $U_{AB,\text{complex}} = U_A + U_B + U_{AB}$
 
-Contact matrix is now not symmetric (UPDATE THIS):
-### $n_{AB \text{contact}}(\alpha, \beta) = X_{\alpha} X_{\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
+Contact matrix is not symmetric anymore
+### $n_{AB, \text{contact}}(\alpha, \beta) = X_{A_\alpha} X_{B_\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
 ====
 ## Binding affinity
-
-Native-Native interactions and Native-IDP interactions
-
-INSERT: affinity plot
+!(images/binding_affinity.png) <<transparent; height:700>> 
 
 ====*
-
 ## Binding specificity
 
-UPDATE: correct z-score
-## $z = \left ( \left< E_{\text{bound}} \right > - E_{\text{unbound}} \right ) / \text{VAR}[E_\text{all}] $
+Define "decoys" as weakly bound structures in protein network.
+### $Z_{E} = \left ( \left< E_{\text{decoy}} \right > - E_{\text{target}} \right ) / \sigma(E_\text{decoy})$
 
-INSERT: specificity plot
+Alternative z-score, measure equilibrium distribution
+# $P_j = \frac{e^{-E_j/kT}}{ \sum_i e^{-E_i / kT} } $
+### $Z_{P} = -\left ( \left< P_{\text{decoy}} \right > - P_{\text{target}} \right ) / \sigma(P_\text{decoy})$
 
-UPDATE: plot E min?
+====*<<transistion:none>>
+## Binding specificity, energy score
+!(images/binding_specificity_1.png) <<transparent; height:700>> 
+====*<<transistion:none>>
+## Binding specificity, probability score
+TO DO: add this in?
+====
 
-====*
 
 ## MF energy correlates to structure
 

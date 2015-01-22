@@ -1,6 +1,7 @@
 .render_cache/*
 
 \#*\#
+*.bak
 *.pyc
 *~
 *.acn

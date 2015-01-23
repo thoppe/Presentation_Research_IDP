@@ -185,7 +185,7 @@ Native structure, folding pathways, ...</p>
 Traditional computational techniques, molecular dynamics<br>work when you have a well-defined native structure.</p>
 <br>
 <p>
-Sample conformational space around the native structure, or along a pathway.<div class="fragment"><br><br><br></p>
+Sample conformational space around the native structure, along a folding pathway, or a specific event (e.g. binding).<div class="fragment"><br><br><br></p>
 <br>
 <p>
 IDPs (<strong></strong>intrinsically disordered proteins<strong></strong>) lack a folding pathway and native state!</p>
@@ -460,7 +460,7 @@ IDPs (<strong></strong>intrinsically disordered proteins<strong></strong>) lack 
 <br>
 <p>
 <div class="reference_footnote"><a href="http://kinemage.biochem.duke.edu/databases/top8000.php">Protein database: Top 8000</a>, Richardson</div></p>
-</section><section  data-transition="none" class="vertical-slide">
+</section><section  data-transition="fade" class="vertical-slide">
 <p>
 <h3>Residue-residue interaction matrix, MJ</h3></p>
 <a href="images/mj_potential/MJ_matrix.png">
@@ -469,7 +469,7 @@ IDPs (<strong></strong>intrinsically disordered proteins<strong></strong>) lack 
 <br>
 <p>
 <div class="reference_footnote">Other statistical potentials: <a href="http://pubs.acs.org/doi/abs/10.1021/ma60054a013">Tanaka and Scheraga</a> (1976), <a href="http://www.ncbi.nlm.nih.gov/pubmed/2359125">Spil</a> (1990), <a href="http://www.ncbi.nlm.nih.gov/pubmed/8604144">Miyaza and Jernigan</a> (1996),<br><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/">Betancourt and Thirumalai</a> (1999), <a href="http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract">Skolnick, Kolinski and Ortiz</a> (2000)</div></p>
-</section><section  data-transition="none" class="vertical-slide">
+</section><section  data-transition="fade" class="vertical-slide">
 <p>
 <h3>MJ matrix reveals biophysical structure</h3></p>
 <a href="images/mj_potential/MJ_matrix_remapped.png">
@@ -477,7 +477,7 @@ IDPs (<strong></strong>intrinsically disordered proteins<strong></strong>) lack 
     </a>
 </section>
 </section><section class="vertical-stack">
-<section  data-transition="none" class="vertical-slide">
+<section  data-transition="fade" class="vertical-slide">
 <p>
 <h3>MJ Contact energy, from structure</h3><h1><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 196.146 30.3945" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
@@ -919,7 +919,7 @@ IDPs (<strong></strong>intrinsically disordered proteins<strong></strong>) lack 
   </g>
  </g>
 </svg></h3></div></p>
-</section><section  data-transition="none" class="vertical-slide">
+</section><section  data-transition="fade" class="vertical-slide">
 <p>
 MJ contact energy reproduces MF energy</p>
 <a href="images/estimation_MF_MJ.png">
@@ -963,7 +963,30 @@ MF Energy distributions: Physically reasonable</p>
 <h2>Protein-Protein interactions</h2></p>
 <br>
 <p>
-Pairwise decomposition of energetic terms of protein complex, A--B<h3><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 132.996442 9.665875" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+Pairwise decomposition of protein complex energy; Binding affinity <svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 17.950442 8.3065" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <g>
+   <symbol id="equation_LWRKV_2" overflow="visible">
+    <path d="M 6.328125 -5.765625 C 6.4375 -6.171875 6.609375 -6.46875 7.40625 -6.5 C 7.453125 -6.5 7.578125 -6.515625 7.578125 -6.703125 C 7.578125 -6.703125 7.578125 -6.8125 7.453125 -6.8125 C 7.125 -6.8125 6.765625 -6.78125 6.4375 -6.78125 C 6.09375 -6.78125 5.71875 -6.8125 5.390625 -6.8125 C 5.328125 -6.8125 5.21875 -6.8125 5.21875 -6.609375 C 5.21875 -6.5 5.3125 -6.5 5.390625 -6.5 C 5.96875 -6.484375 6.078125 -6.28125 6.078125 -6.0625 C 6.078125 -6.03125 6.046875 -5.875 6.046875 -5.859375 L 5.140625 -2.296875 C 4.8125 -0.953125 3.65625 -0.09375 2.65625 -0.09375 C 1.984375 -0.09375 1.453125 -0.53125 1.453125 -1.390625 C 1.453125 -1.40625 1.453125 -1.71875 1.5625 -2.15625 L 2.515625 -6.046875 C 2.609375 -6.40625 2.625 -6.5 3.359375 -6.5 C 3.625 -6.5 3.703125 -6.5 3.703125 -6.703125 C 3.703125 -6.8125 3.59375 -6.8125 3.5625 -6.8125 C 3.28125 -6.8125 2.5625 -6.78125 2.28125 -6.78125 C 2 -6.78125 1.28125 -6.8125 1 -6.8125 C 0.921875 -6.8125 0.8125 -6.8125 0.8125 -6.609375 C 0.8125 -6.5 0.890625 -6.5 1.09375 -6.5 C 1.109375 -6.5 1.296875 -6.5 1.46875 -6.484375 C 1.640625 -6.453125 1.734375 -6.453125 1.734375 -6.3125 C 1.734375 -6.265625 1.625 -5.84375 1.5625 -5.609375 L 1.34375 -4.734375 C 1.25 -4.34375 0.78125 -2.46875 0.734375 -2.265625 C 0.671875 -2 0.671875 -1.84375 0.671875 -1.6875 C 0.671875 -0.484375 1.578125 0.21875 2.625 0.21875 C 3.875 0.21875 5.109375 -0.90625 5.4375 -2.21875 Z M 6.328125 -5.765625 " style="stroke:none;"/>
+   </symbol>
+   <symbol id="equation_LWRKV_0" overflow="visible">
+    <path d="M 1.4375 -0.84375 C 1.1875 -0.453125 0.96875 -0.28125 0.5625 -0.25 C 0.484375 -0.25 0.390625 -0.25 0.390625 -0.109375 C 0.390625 -0.03125 0.453125 0 0.5 0 C 0.671875 0 0.90625 -0.03125 1.09375 -0.03125 C 1.3125 -0.03125 1.609375 0 1.8125 0 C 1.84375 0 1.953125 0 1.953125 -0.15625 C 1.953125 -0.25 1.859375 -0.25 1.828125 -0.25 C 1.78125 -0.265625 1.53125 -0.265625 1.53125 -0.453125 C 1.53125 -0.546875 1.59375 -0.65625 1.625 -0.71875 L 2.1875 -1.59375 L 4.1875 -1.59375 L 4.34375 -0.4375 C 4.328125 -0.359375 4.28125 -0.25 3.875 -0.25 C 3.78125 -0.25 3.6875 -0.25 3.6875 -0.09375 C 3.6875 -0.0625 3.703125 0 3.796875 0 C 4 0 4.5 -0.03125 4.703125 -0.03125 C 4.828125 -0.03125 4.984375 -0.015625 5.109375 -0.015625 C 5.234375 -0.015625 5.375 0 5.5 0 C 5.59375 0 5.640625 -0.0625 5.640625 -0.140625 C 5.640625 -0.25 5.5625 -0.25 5.453125 -0.25 C 5.046875 -0.25 5.03125 -0.3125 5.015625 -0.46875 L 4.390625 -4.78125 C 4.375 -4.921875 4.359375 -4.96875 4.234375 -4.96875 C 4.09375 -4.96875 4.0625 -4.90625 4 -4.8125 Z M 2.359375 -1.84375 L 3.8125 -4.125 L 4.140625 -1.84375 Z M 2.359375 -1.84375 " style="stroke:none;"/>
+   </symbol>
+   <symbol id="equation_LWRKV_1" overflow="visible">
+    <path d="M 1.328125 -0.546875 C 1.265625 -0.3125 1.25 -0.25 0.703125 -0.25 C 0.59375 -0.25 0.5 -0.25 0.5 -0.109375 C 0.5 0 0.578125 0 0.703125 0 L 3.40625 0 C 4.578125 0 5.484375 -0.796875 5.484375 -1.484375 C 5.484375 -1.984375 5.03125 -2.40625 4.28125 -2.484375 C 5.125 -2.640625 5.828125 -3.171875 5.828125 -3.765625 C 5.828125 -4.296875 5.296875 -4.765625 4.390625 -4.765625 L 1.859375 -4.765625 C 1.71875 -4.765625 1.625 -4.765625 1.625 -4.609375 C 1.625 -4.515625 1.71875 -4.515625 1.859375 -4.515625 C 1.859375 -4.515625 2 -4.515625 2.125 -4.5 C 2.265625 -4.484375 2.28125 -4.46875 2.28125 -4.390625 C 2.28125 -4.390625 2.28125 -4.34375 2.25 -4.25 Z M 2.4375 -2.578125 L 2.859375 -4.265625 C 2.921875 -4.484375 2.921875 -4.515625 3.21875 -4.515625 L 4.28125 -4.515625 C 4.984375 -4.515625 5.15625 -4.046875 5.15625 -3.78125 C 5.15625 -3.21875 4.515625 -2.578125 3.578125 -2.578125 Z M 2.109375 -0.25 C 1.890625 -0.25 1.875 -0.265625 1.875 -0.328125 C 1.875 -0.328125 1.875 -0.359375 1.90625 -0.46875 L 2.390625 -2.375 L 3.875 -2.375 C 4.515625 -2.375 4.78125 -1.9375 4.78125 -1.546875 C 4.78125 -0.84375 4.0625 -0.25 3.21875 -0.25 Z M 2.109375 -0.25 " style="stroke:none;"/>
+   </symbol>
+  </g>
+ </defs>
+ <g id="surface1">
+  <g>
+   <use x="-0.671875" xlink:href="#equation_LWRKV_2" y="6.8125"/>
+  </g>
+  <g>
+   <use x="6.131125" xlink:href="#equation_LWRKV_0" y="8.3065"/>
+   <use x="12.122317" xlink:href="#equation_LWRKV_1" y="8.3065"/>
+  </g>
+ </g>
+</svg><h3><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 132.996442 9.665875" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <g>
    <symbol id="equation_NBMPG_12" overflow="visible">
@@ -1216,20 +1239,9 @@ Contact matrix is not symmetric<h3><svg class="latexSVG" height="100%" version="
   </g>
  </g>
 </svg></h3></p>
-</section>
-</section><section class="vertical-stack">
-<section  data-transition="default" class="vertical-slide">
-<p>
-<h2>Binding affinity</h2></p>
-<a href="images/binding_affinity.png">
-    <img class="transparent_image" src="images/binding_affinity.png" height="700">
-    </a>
-</section><section  data-transition="default" class="vertical-slide">
-<p>
-<h2>Binding specificity</h2></p>
 <br>
 <p>
-Define "decoys" as weakly bound structures in protein network.<h3><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 156.588875 10.40025" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+Specificity: Define "decoys" as weakly bound structures in protein network.<h3><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 156.588875 10.40025" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <g>
    <symbol id="equation_LQHGV_17" overflow="visible">
@@ -1366,6 +1378,14 @@ Define "decoys" as weakly bound structures in protein network.<h3><svg class="la
   </g>
  </g>
 </svg></h3></p>
+</section>
+</section><section class="vertical-stack">
+<section  data-transition="default" class="vertical-slide">
+<p>
+<h2>Binding affinity</h2></p>
+<a href="images/binding_affinity.png">
+    <img class="transparent_image" src="images/binding_affinity.png" height="700">
+    </a>
 </section><section  data-transition="default" class="vertical-slide">
 <p>
 <h2>Binding specificity</h2></p>

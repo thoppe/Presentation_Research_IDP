@@ -96,7 +96,7 @@ Coarse-grained depictions of proteins and their interactions
 Traditional computational techniques, molecular dynamics
 work when you have a well-defined native structure.
 
-Sample conformational space around the native structure, or along a pathway.
+Sample conformational space around the native structure, along a folding pathway, or a specific event (e.g. binding).
 
 ====+
 <br>
@@ -134,14 +134,14 @@ Residue-residue interactions, quasi-chemical lattice-gas
 
 && [Protein database: Top 8000](http://kinemage.biochem.duke.edu/databases/top8000.php), Richardson
 
-====*<<transistion:none>>
+====*<<transition:fade>>
 
 ### Residue-residue interaction matrix, MJ
 !(images/mj_potential/MJ_matrix.png)  <<transparent; height:700>>
 
 && Other statistical potentials: [Tanaka and Scheraga](http://pubs.acs.org/doi/abs/10.1021/ma60054a013) (1976), [Spil](http://www.ncbi.nlm.nih.gov/pubmed/2359125) (1990), [Miyaza and Jernigan](http://www.ncbi.nlm.nih.gov/pubmed/8604144) (1996),<br>[Betancourt and Thirumalai](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/) (1999), [Skolnick, Kolinski and Ortiz](http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract) (2000)
 
-====*<<transistion:none>>
+====*<<transition:fade>>
 ### MJ matrix reveals biophysical structure
 !(images/mj_potential/MJ_matrix_remapped.png)  <<transparent; height:700>>
 ====
@@ -155,15 +155,15 @@ Residue-residue interactions, quasi-chemical lattice-gas
 # $U_{\text{MF}} = \sum_{\alpha=1}^{20} \sum_{\beta=\alpha}^{20} n_{\text{contact}}(\alpha, \beta) E_{\alpha \beta}$
 ### $n_{\text{contact}}(\alpha, \beta) = X_{\alpha} X_{\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
-====*<<transistion:none>>
+====*
 MJ contact energy reproduces MF energy
 !(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
 
-====*<<transistion:none>>
+====*<<transition:none>>
 Energy per residue still shows good correlation
 !(images/estimation_MF_MJ_per_N.png) <<transparent; height:700>> 
 
-====*<<transistion:none>>
+====*<<transition:none>>
 MF Energy distributions: Physically reasonable
 !(images/mean_field_calc/average_self_energy.png)  <<transparent; height:325>>
 !(images/mean_field_calc/residue_propensity.png)   <<transparent; height:325>>
@@ -172,7 +172,7 @@ MF Energy distributions: Physically reasonable
 
 && [IDP Propensity](http://www.ncbi.nlm.nih.gov/pubmed/15657106), [Kyte-Doolittle](http://www.ncbi.nlm.nih.gov/pubmed/7108955), [Garbuzynskiy index](http://www.ncbi.nlm.nih.gov/pubmed/20019059)
 
-====<<transistion:default>>
+====<<transition:default>>
 
 ## Protein Networks
 
@@ -184,21 +184,18 @@ MF Energy distributions: Physically reasonable
 
 ## Protein-Protein interactions
 
-Pairwise decomposition of energetic terms of protein complex, A--B
+Pairwise decomposition of protein complex energy; Binding affinity $U_{AB}$
 ### $U_{AB,\text{complex}} = U_A + U_B + U_{AB}$
 
 Contact matrix is not symmetric
 ### $n_{AB, \text{contact}}(\alpha, \beta) = X_{A_\alpha} X_{B_\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
+Specificity: Define "decoys" as weakly bound structures in protein network.
+### $Z_{E} = \left ( \left< E_{\text{decoy}} \right > - E_{\text{target}} \right ) / \sigma(E_\text{decoy})$
+
 ====
 ## Binding affinity
 !(images/binding_affinity.png) <<transparent; height:700>> 
-
-====*
-## Binding specificity
-
-Define "decoys" as weakly bound structures in protein network.
-### $Z_{E} = \left ( \left< E_{\text{decoy}} \right > - E_{\text{target}} \right ) / \sigma(E_\text{decoy})$
 
 ====*
 ## Binding specificity
@@ -225,15 +222,3 @@ Define "decoys" as weakly bound structures in protein network.
 
 _What's next?_ Add structure to mean field calculations. 
 Lattices may be optimal for IDP's, they can reproduce native-energies but quickly sample extended conformational space.
-
-
-
-
-
-
-
-
-
-
-
-

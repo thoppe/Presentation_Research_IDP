@@ -30,11 +30,15 @@ How can we predict phase-separations of protein solutions?
 ### Allen Minton, Di Wu
 !(images/people/minton.jpg) <<height:250>>
 !(images/people/di.jpg)     <<height:250>>
-====
+
+=====
 
 {"include":"protein_introduction.md"}
-====
+
+=====
+
 {"include":"IDP.md"}
+ 
 =====
 
 {"include":"protein_macrocharge.md"}

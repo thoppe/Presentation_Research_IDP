@@ -1,6 +1,6 @@
-title  = "IDP"
+title  = "Multiscale protein modeling Disorder & aggregation"
 author = "Travis Hoppe"
-target = "IDP.md"
+target = "CSULA_2015_talk.md"
 
 python_exec    = python
 md2reveal_exec = md2reveal/md2reveal.py

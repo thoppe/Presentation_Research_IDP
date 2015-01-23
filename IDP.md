@@ -88,7 +88,7 @@ MF Energy distributions: Physically reasonable
 
 ====*
 
-## Protein-Protein interactions
+## Protien-complex energy
 
 Pairwise decomposition of protein complex energy; Binding affinity $U_{AB}$
 ### $U_{AB,\text{complex}} = U_A + U_B + U_{AB}$

@@ -11,7 +11,7 @@ Laboratory of Chemical Physics (LCP), Theoretical Biophysical Chemistry
 
 ====
 
-## BIO*PHYSICS*
+## bio*PHYSICS*
 ### Multiscale modeling
 
 ### Length
@@ -29,9 +29,9 @@ Laboratory of Chemical Physics (LCP), Theoretical Biophysical Chemistry
 
 ====*
 
-## Biological question
+## Biological question #1
 
-How do we make predictions about intrinsically disordered proteins when traditional methods fail?
+How do we make predictions about intrinsically disordered proteins without sampling the entire conformational landscape?
 
 ====
 
@@ -83,25 +83,44 @@ Native structure, folding pathways, ...
 && Energy Landscape by [Wolynes](http://rsta.royalsocietypublishing.org/content/363/1827/453), Folding Example of WW-domain by [Best](http://pubs.acs.org/doi/abs/10.1021/jp102575b), 2010.
 
 ====*
-Only works when you have a well-defined structure...
 
-IDP (intrinsically disordered proteins) do not!
+## Protein Modeling
+Coarse-grained depictions of proteins and their interactions
+
+====+
+
+!(images/not_a_protein/the-treachery-of-images.jpg) <<height:375>>
+!(images/not_a_protein/Not_A_protein.png)           <<height:375>>
+
+&& _The Treachery of Images_ by [René Magritte](http://en.wikipedia.org/wiki/The_Treachery_of_Images)
+
+====*
+
+Traditional computational techniques, molecular dynamics
+work when you have a well-defined native structure.
+
+Sample conformational space around the native structure, or along a pathway.
+
+====+
+<br>
+<br>
+
+IDPs (**intrinsically disordered proteins**) lack a folding pathway and native state!
+
+## Folding $\Rightarrow$ Sampling
 
 ====
 
 ## Intrinsically disordered proteins
-
-### Structure
+|### Structure
 + Lacks *tertiary structure* (disorder!)
 + Still may form secondary structure
 + Different *primary structure* (residue propensity)
 + More charged, less hydrophobic and aromatic residues
-
-### Function
+|### Function
 + Often found in signaling pathways, centers of protein hubs
 + *Specificity*, with *low affinity*
-
-### Modeling
+|### Modeling
 + Traditional methods are problematic (no funnel, no pathway!)
 
 ====
@@ -131,11 +150,12 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ====
 
 ### MJ Contact energy, from structure
-# $U_\text{MJ} = \sum_{i=1}^N \sum_{j>i}^N E_{ij}  \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
+# $U_\text{MJ} = \sum_{i=1}^N \sum_{j>i}^N E_{ij}  \quad \quad \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
 ====+
 <br>
+<br>
 ### Mean-field (MF) energy, from sequence
-# $U_{\text{MF}} = \sum_{\alpha=1}^{20} \sum_{\beta=\alpha}^{20} E_{\alpha \beta} \cdot n_{\text{contact}}(\alpha, \beta)$
+# $U_{\text{MF}} = \sum_{\alpha=1}^{20} \sum_{\beta=\alpha}^{20} n_{\text{contact}}(\alpha, \beta) E_{\alpha \beta}$
 ### $n_{\text{contact}}(\alpha, \beta) = X_{\alpha} X_{\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
 ====*<<transistion:none>>
@@ -159,7 +179,9 @@ MF Energy distributions: Physically reasonable
 
 ## Protein Networks
 
-Model protein networks 
++ Target protein (native-like or IDP) interacts with a range of possible surfaces
++ Measure average binding *affinity* of protein to surfaces
++ Measure binding *specificity* of protein to surfaces
 
 ====*
 
@@ -168,7 +190,7 @@ Model protein networks
 Pairwise decomposition of energetic terms of protein complex, A--B
 ### $U_{AB,\text{complex}} = U_A + U_B + U_{AB}$
 
-Contact matrix is not symmetric anymore
+Contact matrix is not symmetric
 ### $n_{AB, \text{contact}}(\alpha, \beta) = X_{A_\alpha} X_{B_\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
 ====
@@ -181,29 +203,31 @@ Contact matrix is not symmetric anymore
 Define "decoys" as weakly bound structures in protein network.
 ### $Z_{E} = \left ( \left< E_{\text{decoy}} \right > - E_{\text{target}} \right ) / \sigma(E_\text{decoy})$
 
-Alternative z-score, measure equilibrium distribution
-# $P_j = \frac{e^{-E_j/kT}}{ \sum_i e^{-E_i / kT} } $
-### $Z_{P} = -\left ( \left< P_{\text{decoy}} \right > - P_{\text{target}} \right ) / \sigma(P_\text{decoy})$
-
-====*<<transistion:none>>
-## Binding specificity, energy score
+====*
+## Binding specificity
 !(images/binding_specificity_1.png) <<transparent; height:700>> 
-====*<<transistion:none>>
-## Binding specificity, probability score
-TO DO: add this in?
 ====
-
-
-## MF energy correlates to structure
-
-INSERT: MF energy vs radius of gyration
-
-====
-
 ## MF IDP Summary:
++ MF models reproduce MJ contact energies. MF IDP's bound to native structures show increased _specificity_ with lower _affinity_.
 
-+ MF models can reproduce MJ contact energies
-+ MF IDP's bound to native structures show increased _specificity_ with lower _affinity_.
+====+
+
+!(images/small_lattice/1.png) <<height:150; transparent>>
+!(images/small_lattice/2.png) <<height:150; transparent>>
+!(images/small_lattice/3.png) <<height:150; transparent>>
+!(images/small_lattice/4.png) <<height:150; transparent>>
+!(images/small_lattice/5.png) <<height:150; transparent>>
+!(images/small_lattice/6.png) <<height:150; transparent>>
+
+!(images/small_lattice/7.png) <<height:150; transparent>>
+!(images/small_lattice/8.png) <<height:150; transparent>>
+!(images/small_lattice/9.png) <<height:150; transparent>>
+!(images/small_lattice/10.png) <<height:150; transparent>>
+!(images/small_lattice/11.png) <<height:150; transparent>>
+!(images/small_lattice/12.png) <<height:150; transparent>>
+
+_What's next?_ Add structure to mean field calculations. 
+Lattices may be optimial for IDP's, they can reproduce native-energires but quickly sample extended conformational space.
 
 
 

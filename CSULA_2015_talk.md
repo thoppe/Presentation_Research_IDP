@@ -20,7 +20,7 @@ _without sampling the entire conformational landscape_?
 
 ## Biophysical question #2
 
-How can we predict phase-separations of protein solutions?
+How do we predict phase-separations of protein solutions?
 ====*
 
 ## People involved

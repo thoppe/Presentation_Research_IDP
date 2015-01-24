@@ -4,13 +4,13 @@
 !(images/macrocharge/1W6Z_cartoon.png)<<height:225px;transparent>> 
 !(images/macrocharge/3V03_cartoon.png)<<height:225px;transparent>>
 
-How do we model many protein-protien interactions.
+How do we model _many_ protein-protein interactions?
 Can we *predict* aggregates? Phase separations lead to sudden 
 fundamental changes in liquid structure and local density.
 !(images/macrocharge/example_phase_sep.jpg) <<height:225px;transparent>> 
 !(images/macrocharge/phase_sep2.jpg) <<height:225px;transparent>> 
 
-&& Human serum albumin, Ovalbumin, Lysozyme, Bovine Serum Albumin respectively.
+&& Human serum albumin [(1AO6)](http://www.rcsb.org/pdb/explore/explore.do?structureId=1ao6), Ovalbumin [(1OVA)](http://www.rcsb.org/pdb/explore.do?structureId=1ova), Lysozyme [(1W6Z)](http://www.rcsb.org/pdb/explore/explore.do?structureId=1w6z), Bovine Serum Albumin [(3V03)](http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03) respectively.
 
 ====*
 
@@ -27,14 +27,14 @@ Internal conformational energies, Solvent effects
 ====*<<transition:none>>
 
 ## Experimental Measurements
-Second virial coeffiecent $B_{2}$, measurement of 
+Second virial coefficient $B_{2}$, measurement of 
 protein solutions using light scattering at different pH.
 !(images/macrocharge/exp_B22_1OVA.png) <<height:600px;>>
 
 ====*<<transition:none>>
 
 ## Matching experiments
-Theroetical predictions of the second virial coeffiecent $B_{2}$
+Theoretical predictions of the second virial coefficient $B_{2}$
 considering only excluded volume and reduced electrostatics.
 !(images/macrocharge/fit_B22_1OVA.png) <<height:600px;>>
 
@@ -50,4 +50,4 @@ $B_3$ is the pairwise interaction of _three_ molecules
 For rotationally invariant molecules*
 ##$B_2 = -\frac{1}{2} \int_0^\infty (e^{-U(r)/k_B T} - 1) 4\pi r^2 dr$
 
-&& *Rotationally invariant calculation intergrates over all oritentations
+&& *Rotationally dependent calculation integrates over all orientations

@@ -15,17 +15,20 @@ IDPs (intrinsically disordered proteins) lack a folding pathway and native state
 ====*
 
 ## Intrinsically disordered proteins
+
 |### Structure
-+ Lacks *tertiary structure* (disorder!)
++ Lack *tertiary structure* (disorder!)
 + Still may form secondary structure
 + Different *primary structure* (residue propensity)
 + More charged, less hydrophobic and aromatic residues
 |### Function
 + Often found in signaling pathways, centers of protein hubs
++ Linkers and Spacers (entropic chains), Chaperones & PTMs
 + *Specificity*, with *low affinity*
 |### Modeling
 + Traditional methods are problematic (no funnel, no pathway!)
-
+<br>
+&& 2014 Review of intrinsically disordered proteins by [Lee et. al.](http://pubs.acs.org/doi/abs/10.1021/cr400525m) 
 ====
 
 ## Statistical Potentials

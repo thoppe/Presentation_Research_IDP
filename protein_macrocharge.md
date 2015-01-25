@@ -101,7 +101,3 @@ Predict the second-virial coefficient as a function of pH values, protein concen
 
 Use the model in higher-order simulations to predict 
 phase behavior via Gibb's ensembles.
-
-====+
-<br>
-### That would be really neat.

@@ -50,6 +50,7 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ====*<<transition:fade>>
 ### MJ matrix reveals biophysical structure
 !(images/mj_potential/MJ_matrix_remapped.png)  <<transparent; height:700>>
+&& H (hydrophobic), P (polar), C (charged); Analysis of Statistical Potentials by [Li](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.765).
 ====
 
 ### MJ Contact energy, from structure

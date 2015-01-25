@@ -106,7 +106,7 @@ Specificity: Define "decoys" as weakly bound structures in protein network.
 ====*
 ## Binding specificity
 !(images/binding_specificity_1.png) <<transparent; height:700>> 
-====
+====*
 ## MF IDP Summary:
 + MF models reproduce MJ contact energies. MF IDP's bound to native structures show increased _specificity_ with lower _affinity_.
 

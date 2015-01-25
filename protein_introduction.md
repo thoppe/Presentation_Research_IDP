@@ -40,7 +40,6 @@ Predict structure from sequence
 
 !(images/energy_landscape.jpg)  <<height:300; transparent>>
 !(images/ww_fold.m4v) <<height:300>>
-
 Native structure, folding pathways, ...
 
 && Energy Landscape by [Wolynes](http://rsta.royalsocietypublishing.org/content/363/1827/453), Folding Example of WW-domain by [Best](http://pubs.acs.org/doi/abs/10.1021/jp102575b), 2010.

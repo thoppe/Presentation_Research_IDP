@@ -64,6 +64,14 @@ import pylab as plt
 import seaborn as sns
 sns.set_context("talk")
 
+c1,c2,c3,c4 = sns.color_palette("muted", 4)
+
+params = {
+    'legend.fontsize': 20,
+    'axes.labelsize':25,
+}
+plt.rcParams.update(params)
+
 sns.distplot(df["PDB_U"],norm_hist=True,label="Native-like")
 sns.distplot(df["IDP_U"],norm_hist=True,label="IDP")
 
@@ -71,13 +79,13 @@ plt.legend(loc=2)
 plt.xlabel("Mean field energy")
 
 plt.xlim(-40,20)
-#plt.savefig("average_self_energy.png",
-#            bbox_inches='tight',transparent=True)
+plt.savefig("average_self_energy.png",
+            bbox_inches='tight',transparent=True)
 print "Skipping the save of the distribution"
 
 plt.figure()
-plt.scatter(df["IDP_U"], df["IDP_HYDRO"],alpha=.5,s=1,edgecolor='b')
-plt.scatter(df["PDB_U"], df["PDB_HYDRO"],alpha=.5,s=1,edgecolor='b')
+plt.scatter(df["IDP_U"], df["IDP_HYDRO"],alpha=.3,s=1,edgecolor=c1)
+plt.scatter(df["PDB_U"], df["PDB_HYDRO"],alpha=.3,s=1,edgecolor=c1)
 plt.ylabel("Kyte-Doolittle Hydrophilicity")
 plt.xlabel("Mean field energy")
 plt.savefig("MF_vs_hydrophilicity.png",
@@ -85,8 +93,8 @@ plt.savefig("MF_vs_hydrophilicity.png",
 
 
 plt.figure()
-plt.scatter(df["IDP_U"], df["IDP_GAR"],alpha=.5,s=1,edgecolor='b')
-plt.scatter(df["PDB_U"], df["PDB_GAR"],alpha=.5,s=1,edgecolor='b')
+plt.scatter(df["IDP_U"], df["IDP_GAR"],alpha=.3,s=1,edgecolor=c1)
+plt.scatter(df["PDB_U"], df["PDB_GAR"],alpha=.3,s=1,edgecolor=c1)
 plt.ylabel("Garbuzynskiy index")
 plt.xlabel("Mean field energy")
 plt.savefig("MF_vs_Garbuzynskiy.png",

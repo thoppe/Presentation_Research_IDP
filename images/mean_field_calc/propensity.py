@@ -22,10 +22,19 @@ df.index = fixed_indexing
 import seaborn as sns
 sns.set_context("talk")
 
-df.plot(kind="bar",width=.9)
+c1,c2,c3,c4 = sns.color_palette("muted", 4)
+
+params = {
+    'legend.fontsize': 20,
+    'axes.labelsize':25,
+}
+plt.rcParams.update(params)
+df.plot(kind="bar",width=.9, color=(c1,c2))
 
 plt.ylabel("Propensity")
 plt.xlabel("Residue")
+
+plt.setp(plt.gca().xaxis.get_majorticklabels(), rotation=0 )
 
 plt.savefig("residue_propensity.png",
             bbox_inches='tight',transparent=True)

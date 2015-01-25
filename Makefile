@@ -16,7 +16,7 @@ commit:
 	@-make push
 
 check:
-	find . -maxdepth 1 -name "*.md" | xargs -I {} aspell -c -H {}
+	find . -maxdepth 1 -name "*.md" -exec aspell check {} \;
 
 view:
 	chromium-browser index.html

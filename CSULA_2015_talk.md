@@ -59,15 +59,17 @@ How do we predict phase separations of protein solutions?
 
 ====
 
-## Additional research
-
-Programmable Nanoscaffolds and Multivalent Effects.
-Quantification of plasma HIV RNA.
-Integer sequence discovery from small graphs.
-Dependence of Internal Friction on Folding Mechanism.
-Macromolecular crowding, surface adsorption and protein fibrillation.
-
-!(images/other_research/internal_friction.jpg)
+### Additional research
+Crowding, surface adsorption and protein fibrillation, [Biophys](http://www.cell.com/biophysj/home) (in press).
+Programmable Nanoscaffolds and Multivalent Effects, [JACS](http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html).
+Integer sequence discovery from small graphs, [Discrete Math.](http://arxiv.org/abs/1408.3644) (submitted).
+Dependence of Internal Friction on Folding Mechanism, [JACS](http://pubs.acs.org/journal/jacsat) (in press).
+Quantification of plasma HIV RNA, [Nature Comm](http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html).
+!(images/other_research/crowding_all.png)[test] <<height:300>>
+!(images/other_research/nanoscaffolds.jpeg) <<height:300>>
+!(images/other_research/combined_subgraphs2.png) <<height:300>>
+!(images/other_research/internal_friction.jpg) <<height:150>>
+!(images/other_research/hiv_detection.jpg) <<height:150>>
 
 ====
 

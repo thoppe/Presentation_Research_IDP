@@ -38,7 +38,7 @@ Residue-residue interactions, quasi-chemical lattice-gas
 !(images/1pcy/1pcy_ultra_sidechain.png) <<height:300>>
 !(images/1pcy/1pcy_res_res.png) <<height:300>>
 
-&& [Protein database: Top 8000](http://kinemage.biochem.duke.edu/databases/top8000.php), Richardson
+&& [Protein database: Top 8000](http://kinemage.biochem.duke.edu/databases/top8000.php), Richardson Group
 
 ====*<<transition:fade>>
 
@@ -88,7 +88,7 @@ MF Energy distributions: Physically reasonable
 
 ====*
 
-## Protien-complex energy
+## Protein-complex energy
 
 Pairwise decomposition of protein complex energy; Binding affinity $U_{AB}$
 ### $U_{AB,\text{complex}} = U_A + U_B + U_{AB}$

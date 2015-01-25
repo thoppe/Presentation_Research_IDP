@@ -48,7 +48,7 @@ $B_2$ is the pairwise interaction of _two_ molecules
 $B_3$ is the pairwise interaction of _three_ molecules
 
 For rotationally invariant molecules*
-##$B_2 = -\frac{1}{2} \int_0^\infty (e^{-U(r)/k_B T} - 1) 4\pi r^2 dr$
+##$B_2 = -\frac{1}{2} \int_0^\infty (e^{-U(r)/k_B T} - 1) 4\pi r^2 d r$
 
 && *Rotationally dependent [calculation](http://thoppe.github.io/Presentation_Research_Macrocharge/#/2/1) integrates over all orientations. For [hard spheres](http://thoppe.github.io/Presentation_Research_Macrocharge/#/5) $B_2 = (2/3)\pi \sigma^3$.
 

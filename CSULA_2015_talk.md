@@ -32,7 +32,7 @@ How do we predict phase separations of protein solutions?
 !(images/people/minton.jpg) <<height:250>>
 !(images/people/di.jpg)     <<height:250>>
 
-=====
+===== [introduction_to_proteins]
 
 {"include":"protein_introduction.md"}
 
@@ -72,5 +72,7 @@ Quantification of plasma HIV RNA, [Nature Comm](http://www.nature.com/ncomms/201
 !(images/other_research/hiv_detection.jpg) <<height:150>>
 
 ====
-
+<br><br><br><br>
 # Thanks, you.
+<br><br><br><br>
+&& Links: Introduction [(protein background)](#/introduction_to_proteins), Disorder [(IDPs)](#/disorder_idp), Aggregation [(phase separations)](#/aggregation_phase_separation).

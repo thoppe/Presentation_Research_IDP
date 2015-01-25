@@ -5,9 +5,10 @@
 
 *[Travis Hoppe](http://thoppe.github.io/)*, [(deck source)](https://github.com/thoppe/Presentation_Research_IDP)
 
-National Institutes of Health (NIH)
-National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)
-Laboratory of Chemical Physics (LCP), Theoretical Biophysical Chemistry
+National Institutes of Health ([NIH](http://www.nih.gov/))
+National Institute of Diabetes and Digestive and Kidney Diseases ([NIDDK](http://www.niddk.nih.gov))
+Laboratory of Chemical Physics ([LCP](http://www.niddk.nih.gov/research-funding/at-niddk/labs-branches/LCP/Pages/about.aspx)), Theoretical Biophysical Chemistry ([TBC](http://spin.niddk.nih.gov/best/home.html))
+
 
 ====
 ## Biophysical question [#1](#/disorder_idp)

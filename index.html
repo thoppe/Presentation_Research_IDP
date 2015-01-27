@@ -113,7 +113,7 @@ LKISQAVHAA HAEINEAGRE VVGGAEAGVD AASVSEEFRA DHPFLFCIKH IATNAVLFFG RCVSP</code></
     <a href="images/1ova/1ova_cartoon.png">
     <img class="transparent_image" src="images/1ova/1ova_cartoon.png" height="340">
     </a>
-    <figcaption>Secondary structure<br>helices, sheets</figcaption>
+    <figcaption>Secondary structure<br>helices [red], sheets [blue]</figcaption>
     </figure>
 <figure>
     <a href="images/1ova/1ova_spheres.png">
@@ -123,14 +123,14 @@ LKISQAVHAA HAEINEAGRE VVGGAEAGVD AASVSEEFRA DHPFLFCIKH IATNAVLFFG RCVSP</code></
     </figure>
 <figure>
     <a href="images/1ova/Ovalbummin_aggregate.gif">
-    <img class="" src="images/1ova/Ovalbummin_aggregate.gif" height="340">
+    <img class="transparent_image" src="images/1ova/Ovalbummin_aggregate.gif" height="340">
     </a>
     <figcaption>Higher-order structure<br>complexes, aggregation</figcaption>
     </figure>
 <br>
 <br>
 <p>
-<div class="reference_footnote">Ovalbumin, Egg white protein <a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">PDB:1OVA</a>, Crystal Structure resolved by <a href="http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract">Carrell</a>, Aggregate structure by <a href="http://ps.oxfordjournals.org/content/60/9/2071.abstract">Johnson</a></div></p>
+<div class="reference_footnote">Ovalbumin, Egg white protein <a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">PDB:1OVA</a>, Crystal Structure resolved by <a href="http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract">Carrell</a>, SEM Aggregate structure by <a href="http://ps.oxfordjournals.org/content/60/9/2071.abstract">Johnson</a></div></p>
 </section><section   class="vertical-slide">
 <p>
 <h2>Primary Structure</h2>Twenty residue "alphabet" forms polypeptide chain</p>
@@ -223,13 +223,53 @@ Native structure, folding pathways, ...</p>
 How do we make predictions about intrinsically disordered proteins<br><em>given their large conformational landscape</em>?</p>
 </section><section   class="vertical-slide">
 <p>
-<h2>Traditional "folding"</h2>Sample conformational space around the native structure,<br>along a folding pathway, or a specific event (e.g. binding).</p>
+<h3>Paradigm shift</h3>Protiens were thought to adopt stable, folded conformations.<br>Solving the structure was paramount for understanding the function.<div class="fragment"><br><h3>Unexpected: disorder is abundant!</h3></p>
+<figure>
+    <a href="images/yeast_grouping_gsponer-2008.jpg">
+    <img class="transparent_image" src="images/yeast_grouping_gsponer-2008.jpg" height="500">
+    </a>
+    <figcaption>Grouping proteins in the yeast proteome</figcaption>
+    </figure>
+<p>
+</div></p>
+</section><section   class="vertical-slide">
+<p>
+<h2>Intrinsically disordered proteins</h2></p>
 <br>
 <p>
-Computational techniques, such as molecular dynamics<br>work when you have a well-defined native structure.<div class="fragment"><br></p>
+<div display='inline' align='left'><h3>Structure</h3></div></p>
+<ul><li>Lack <strong>tertiary structure</strong> (disorder!)</li>
+<li>Still may form secondary structure</li>
+<li>Different <strong>primary structure</strong> (residue propensity)</li>
+<li>More charged, less hydrophobic and aromatic residues</li></ul>
+<figure>
+    <a href="images/1BRS_barnase_barstar/1BRS_complex.png">
+    <img class="transparent_image" src="images/1BRS_barnase_barstar/1BRS_complex.png" height="300">
+    </a>
+    <figcaption>Lock and Key<br>Barnase-Barstar complex</figcaption>
+    </figure>
+<figure>
+    <a href="images/1L8C_HIF1_CBP/1L8C.png">
+    <img class="transparent_image" src="images/1L8C_HIF1_CBP/1L8C.png" height="300">
+    </a>
+    <figcaption>Disorder-to-order<br>Hif-1 a/CBP</figcaption>
+    </figure>
+<figure>
+    <a href="images/SIC1_disordered_protein_mittag.png">
+    <img class="transparent_image" src="images/SIC1_disordered_protein_mittag.png" height="300">
+    </a>
+    <figcaption>Always disordered<br>SIC1 binding to CDC4</figcaption>
+    </figure>
+</section><section   class="vertical-slide">
+<p>
+<div display='inline' align='left'><h3>Function</h3></div></p>
+<ul><li>Often found in signaling pathways, centers of protein hubs</li>
+<li>Linkers and Spacers (entropic chains), Chaperones</li>
+<li>Binding <strong>specificity</strong>, with <strong>low affinity</strong></li></ul>
+<br>
 <br>
 <p>
-<h2>IDPs: Folding <svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 8.859375 5.484375" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<div display='inline' align='left'><h3>Modeling</h3></div><h2>IDPs: Folding <svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 8.859375 5.484375" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <g>
    <symbol id="equation_LOEEJ_0" overflow="visible">
@@ -242,27 +282,11 @@ Computational techniques, such as molecular dynamics<br>work when you have a wel
    <use x="-0.546875" xlink:href="#equation_LOEEJ_0" y="5.234375"/>
   </g>
  </g>
-</svg> Sampling</h2>IDPs (intrinsically disordered proteins) lack a folding pathway and native state!<br></div></p>
-</section><section   class="vertical-slide">
-<p>
-<h2>Intrinsically disordered proteins</h2></p>
+</svg> Sampling</h2></p>
+<br>
 <br>
 <p>
-<div display='inline' align='left'><h3>Structure</h3></div></p>
-<ul><li>Lack <strong>tertiary structure</strong> (disorder!)</li>
-<li>Still may form secondary structure</li>
-<li>Different <strong>primary structure</strong> (residue propensity)</li>
-<li>More charged, less hydrophobic and aromatic residues</li></ul>
-<p>
-<div display='inline' align='left'><h3>Function</h3></div></p>
-<ul><li>Often found in signaling pathways, centers of protein hubs</li>
-<li>Linkers and Spacers (entropic chains), Chaperones & PTMs</li>
-<li><strong>Specificity</strong>, with <strong>low affinity</strong></li></ul>
-<p>
-<div display='inline' align='left'><h3>Modeling</h3></div></p>
-<ul><li>Traditional methods are problematic (no funnel, no pathway!)</li></ul>
-<p>
-<div class="reference_footnote">2014 Review of intrinsically disordered proteins by <a href="http://pubs.acs.org/doi/abs/10.1021/cr400525m">Lee et. al.</a></div></p>
+<em>Goal is to develop physical representation to model IDP interactions.</em></p>
 </section>
 </section><section class="vertical-stack">
 <section   class="vertical-slide">

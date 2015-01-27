@@ -1,16 +1,11 @@
-## Traditional "folding" 
-Sample conformational space around the native structure, 
-along a folding pathway, or a specific event (e.g. binding).
-
-Computational techniques, such as molecular dynamics
-work when you have a well-defined native structure.
-
-
+### Paradigm shift
+Protiens were thought to adopt stable, folded conformations.
+Solving the structure was paramount for understanding the function.
 ====+
-<br>
 
-## IDPs: Folding $\Rightarrow$ Sampling
-IDPs (intrinsically disordered proteins) lack a folding pathway and native state!
+<br>
+### Unexpected: disorder is abundant!
+!(images/yeast_grouping_gsponer-2008.jpg Grouping proteins in the yeast proteome)<<height:500;transparent>>
 
 ====*
 
@@ -21,14 +16,23 @@ IDPs (intrinsically disordered proteins) lack a folding pathway and native state
 + Still may form secondary structure
 + Different *primary structure* (residue propensity)
 + More charged, less hydrophobic and aromatic residues
+!(images/1BRS_barnase_barstar/1BRS_complex.png Lock and Key<br>Barnase-Barstar complex) <<height:300;transparent>>
+!(images/1L8C_HIF1_CBP/1L8C.png Disorder-to-order<br>Hif-1 a/CBP) <<height:300;transparent>>
+!(images/SIC1_disordered_protein_mittag.png Always disordered<br>SIC1 binding to CDC4)<<height:300;transparent>>
+====*
+
 |### Function
 + Often found in signaling pathways, centers of protein hubs
-+ Linkers and Spacers (entropic chains), Chaperones & PTMs
-+ *Specificity*, with *low affinity*
++ Linkers and Spacers (entropic chains), Chaperones
++ Binding *specificity*, with *low affinity*
+
+
 |### Modeling
-+ Traditional methods are problematic (no funnel, no pathway!)
-<br>
-&& 2014 Review of intrinsically disordered proteins by [Lee et. al.](http://pubs.acs.org/doi/abs/10.1021/cr400525m) 
+## IDPs: Folding $\Rightarrow$ Sampling
+
+
+_Goal is to develop physical representation to model IDP interactions._
+
 ====
 
 ## Statistical Potentials

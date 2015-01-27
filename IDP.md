@@ -95,13 +95,15 @@ MF Energy distributions: Physically reasonable
 ## Protein-complex energy
 
 Pairwise decomposition of protein complex energy; Binding affinity $U_{AB}$
-### $U_{AB,\text{complex}} = U_A + U_B + U_{AB}$
+#### $U_{AB,\text{complex}} = U_A + U_B + U_{AB}$
 
 Contact matrix is not symmetric
 ### $n_{AB, \text{contact}}(\alpha, \beta) = X_{A_\alpha} X_{B_\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
 Specificity: Define "decoys" as weakly bound structures in protein network.
 ### $Z_{E} = \left ( \left< E_{\text{decoy}} \right > - E_{\text{target}} \right ) / \sigma(E_\text{decoy})$
+
+&& Z-scores of native protein structures, [Zhang and Skolnick](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144000/)
 
 ====
 ## Binding affinity
@@ -116,19 +118,20 @@ Specificity: Define "decoys" as weakly bound structures in protein network.
 
 ====+
 
-!(images/small_lattice/1.png) <<height:150; transparent>>
-!(images/small_lattice/2.png) <<height:150; transparent>>
-!(images/small_lattice/3.png) <<height:150; transparent>>
-!(images/small_lattice/4.png) <<height:150; transparent>>
-!(images/small_lattice/5.png) <<height:150; transparent>>
-!(images/small_lattice/6.png) <<height:150; transparent>>
+!(images/small_lattice/7.png PDB:1B8A) <<height:150; transparent>>
+!(images/small_lattice/2.png 1B0B) <<height:150; transparent>>
+!(images/small_lattice/3.png 1BQ8) <<height:150; transparent>>
+!(images/small_lattice/4.png 1DQP) <<height:150; transparent>>
+!(images/small_lattice/5.png 1DOI) <<height:150; transparent>>
+!(images/small_lattice/6.png 1C4Q) <<height:150; transparent>> 
 
-!(images/small_lattice/7.png) <<height:150; transparent>>
-!(images/small_lattice/8.png) <<height:150; transparent>>
-!(images/small_lattice/9.png) <<height:150; transparent>>
-!(images/small_lattice/10.png) <<height:150; transparent>>
-!(images/small_lattice/11.png) <<height:150; transparent>>
-!(images/small_lattice/12.png) <<height:150; transparent>>
+
+!(images/small_lattice/1.png 1ARB) <<height:150; transparent>>
+!(images/small_lattice/8.png 1BXU) <<height:150; transparent>>
+!(images/small_lattice/9.png 1CC8) <<height:150; transparent>>
+!(images/small_lattice/10.png 1CJC) <<height:150; transparent>>
+!(images/small_lattice/11.png 1DFU) <<height:150; transparent>>
+!(images/small_lattice/12.png 1DMG) <<height:150; transparent>>
 
 _What's next?_ Add structure to mean field calculations. 
 Lattices may be optimal for IDP's, they can reproduce native-energies but quickly sample extended conformational space.

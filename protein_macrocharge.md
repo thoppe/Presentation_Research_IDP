@@ -4,13 +4,11 @@ Phase separations lead to sudden changes in liquid structure.
 !(images/macrocharge/phase_sep2.jpg) <<height:225px;transparent>> 
 
 How do we model _many_ protein-protein interactions? 
-Can we *predict* aggregates? 
-!(images/macrocharge/1AO6_cartoon.png)<<height:225px;transparent>> 
-!(images/macrocharge/1OVA_cartoon.png)<<height:225px;transparent>> 
-!(images/macrocharge/1W6Z_cartoon.png)<<height:225px;transparent>> 
-!(images/macrocharge/3V03_cartoon.png)<<height:225px;transparent>>
-
-&& Human serum albumin [(1AO6)](http://www.rcsb.org/pdb/explore/explore.do?structureId=1ao6), Ovalbumin [(1OVA)](http://www.rcsb.org/pdb/explore.do?structureId=1ova), Lysozyme [(1W6Z)](http://www.rcsb.org/pdb/explore/explore.do?structureId=1w6z), Bovine Serum Albumin [(3V03)](http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03) respectively.
+Can we *predict* aggregates from experimental structure? 
+!(images/macrocharge/1AO6_cartoon.png Human serum albumin<br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1ao6">PDB:1AO6</a>) <<height:225px;transparent>> 
+!(images/macrocharge/1OVA_cartoon.png Ovalbumin<br><a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">PDB:1OVA</a>) <<height:225px;transparent>>
+!(images/macrocharge/1W6Z_cartoon.png Lysozyme <br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1w6z">PDB:1W6Z</a>) <<height:225px;transparent>>)
+!(images/macrocharge/3V03_cartoon.png Bovine Serum Albumin<br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03">PDB:3V03</a>) <<height:225px;transparent>>)
 
 ====*
 
@@ -57,7 +55,8 @@ For rotationally invariant molecules*
 # The Process
 !(images/macrocharge/human_serum_albumin_1e7h.png) <<transparent>>
 
-Start with the crystallized PDB Structure (HSA)
+Start with the crystallized PDB Structure
+_e.g._ Human Serum Albumin [PDB:1A06](http://www.rcsb.org/pdb/explore/explore.do?structureId=1ao6")
 ====*
 
 ## Electrostatics 

@@ -46,7 +46,7 @@
 <hr>
 <br>
 <p>
-<strong><a href="http://thoppe.github.io/">Travis Hoppe</a></strong>, <a href="https://github.com/thoppe/Presentation_Research_IDP">(deck source)</a></p>
+<strong><a href="http://thoppe.github.io/">Travis Hoppe</a></strong>, <a href="https://github.com/thoppe/Presentation_Research_IDP">(deck source)</a><br><div style="font-size:60%;"><a href="https://github.com/thoppe/Presentation_Research_IDP">https://github.com/thoppe/Presentation_Research_IDP</a></div></p>
 <br>
 <p>
 National Institutes of Health (<a href="http://www.nih.gov/">NIH</a>)<br>National Institute of Diabetes and Digestive and Kidney Diseases (<a href="http://www.niddk.nih.gov">NIDDK</a>)<br>Laboratory of Chemical Physics (<a href="http://www.niddk.nih.gov/research-funding/at-niddk/labs-branches/LCP/Pages/about.aspx">LCP</a>), Theoretical Biophysical Chemistry (<a href="http://spin.niddk.nih.gov/best/home.html">TBC</a>)</p>
@@ -57,7 +57,7 @@ National Institutes of Health (<a href="http://www.nih.gov/">NIH</a>)<br>Nationa
 <h2>Biophysical question <a href="#/disorder_idp">#1</a></h2></p>
 <br>
 <p>
-How do we make predictions about intrinsically disordered proteins<br><em>without sampling the entire conformational landscape</em>?<div class="fragment"><br></p>
+How do we make predictions about intrinsically disordered proteins<br><em>given their large conformational landscape</em>?<div class="fragment"><br></p>
 <br>
 <p>
 <h2>Biophysical question <a href="#/aggregation_phase_separation">#2</a></h2></p>
@@ -66,61 +66,83 @@ How do we make predictions about intrinsically disordered proteins<br><em>withou
 How do we predict phase separations of protein solutions?<br></div></p>
 </section><section   class="vertical-slide">
 <p>
-<h2>People involved</h2><h3>Robert Best, Wenwei Zheng</h3></p>
-<a href="images/people/robert.jpg">
-    <img class="" src="images/people/robert.jpg" height="250">
+<h3>Acknowledgements:</h3><h4>Laboratory of Chemical Physics</h4></p>
+<figure>
+    <a href="images/people/robert.jpg">
+    <img class="" src="images/people/robert.jpg" height="225">
     </a>
-<a href="images/people/wenwei.jpg">
-    <img class="" src="images/people/wenwei.jpg" height="250">
+    <figcaption>Robert Best</figcaption>
+    </figure>
+<figure>
+    <a href="images/people/wenwei.jpg">
+    <img class="" src="images/people/wenwei.jpg" height="225">
     </a>
+    <figcaption>Wenwei Zheng</figcaption>
+    </figure>
+<br>
 <p>
-<h3>Allen Minton, Di Wu</h3></p>
-<a href="images/people/minton.jpg">
-    <img class="" src="images/people/minton.jpg" height="250">
+<h4>Laboratory of Biochemistry and Genetics</h4></p>
+<figure>
+    <a href="images/people/minton.jpg">
+    <img class="" src="images/people/minton.jpg" height="225">
     </a>
-<a href="images/people/di.jpg">
-    <img class="" src="images/people/di.jpg" height="250">
+    <figcaption>Allen Minton</figcaption>
+    </figure>
+<figure>
+    <a href="images/people/di.jpg">
+    <img class="" src="images/people/di.jpg" height="225">
     </a>
+    <figcaption>Di Wu</figcaption>
+    </figure>
+<p>
+*<em>Support provided by the Intramural Research Division of the NIDDK, NIH.</em></p>
 </section>
 </section><section class="vertical-stack">
 <section id="introduction_to_proteins"  class="vertical-slide">
 <p>
-<h1>Protein Structure</h1><h3>Levels of complexity:</h3></p>
+<h3>Protein Structure</h3></p>
 <br>
 <p>
-<div display='inline' align='left'><h3>Primary structure (sequence)</h3></div><div display='inline' align='left'><h3>Secondary structure (helices, sheets)</h3></div><div display='inline' align='left'><h3>Tertiary structure (3D structure)</h3></div><div display='inline' align='left'><h3>Quaternary structure (protein complex)</h3></div><div display='inline' align='left'><h3>Higher-order structure (aggregation)</h3></div></p>
-</section><section   class="vertical-slide">
-<p>
-<h2>Primary Structure</h2>Twenty residue "alphabet" forms polypeptide chain</p>
-<a href="images/common_aa_chart.png">
-    <img class="" src="images/common_aa_chart.png" width="1200">
-    </a>
-<br>
-<p>
-<div class="reference_footnote">Chemical Structure of the Twenty Common Amino Acids, <a href="http://www.compoundchem.com/2014/09/16/aminoacids/">Compound Interest</a></div></p>
-</section><section   class="vertical-slide">
-<p>
-<h2>Secondary & Tertiary Structure</h2></p>
-<a href="images/1ova/1ova_lines.png">
-    <img class="" src="images/1ova/1ova_lines.png" width="380">
-    </a>
-<a href="images/1ova/1ova_spheres.png">
-    <img class="" src="images/1ova/1ova_spheres.png" width="380">
-    </a>
-<a href="images/1ova/1ova_cartoon.png">
-    <img class="" src="images/1ova/1ova_cartoon.png" width="380">
-    </a>
-<br>
-<p>
-From sequence to structure</p>
+<div display='inline' align='left'><h4>Primary structure (sequence)</h4></div></p>
 <pre><code class=python>GSIGAASMEF CFDVFKELKV HHANENIFYC PIAIMSALAM VYLGAKDSTR TQINKVVRFD KLPGFGDEIE AQCGTSVNVH 
 SSLRDILNQI TKPNDVYSFS LASRLYAEER YPILPEYLQC VKELYRGGLE PINFQTAADQ ARELINSWVE SQTNGIIRNV 
 LQPSSVDSQT AMVLVNAIVF KGLWEKAFKD EDTQAMPFRV TEQESKPVQM MYQIGLFRVA SMASEKMKIL ELPFASGTMS 
 MLVLLPDEVS GLEQLESIIN FEKLTEWTSS NVMEERKIKV YLPRMKMEEK YNLTSVLMAM GITDVFSSSA NLSGISSAES 
 LKISQAVHAA HAEINEAGRE VVGGAEAGVD AASVSEEFRA DHPFLFCIKH IATNAVLFFG RCVSP</code></pre>
+<figure>
+    <a href="images/1ova/1ova_cartoon.png">
+    <img class="transparent_image" src="images/1ova/1ova_cartoon.png" height="340">
+    </a>
+    <figcaption>Secondary structure<br>helices, sheets</figcaption>
+    </figure>
+<figure>
+    <a href="images/1ova/1ova_spheres.png">
+    <img class="transparent_image" src="images/1ova/1ova_spheres.png" height="340">
+    </a>
+    <figcaption>Tertiary structure<br>3D structure</figcaption>
+    </figure>
+<figure>
+    <a href="images/1ova/Ovalbummin_aggregate.gif">
+    <img class="" src="images/1ova/Ovalbummin_aggregate.gif" height="340">
+    </a>
+    <figcaption>Higher-order structure<br>complexes, aggregation</figcaption>
+    </figure>
+<br>
 <br>
 <p>
-<div class="reference_footnote">Ovalbumin, Egg white protein <a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">PDB 1OVA</a>, Crystal Structure resolved by <a href="http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract">Carrell</a></div></p>
+<div class="reference_footnote">Ovalbumin, Egg white protein <a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">PDB:1OVA</a>, Crystal Structure resolved by <a href="http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract">Carrell</a>, Aggregate structure by <a href="http://ps.oxfordjournals.org/content/60/9/2071.abstract">Johnson</a></div></p>
+</section><section   class="vertical-slide">
+<p>
+<h2>Primary Structure</h2>Twenty residue "alphabet" forms polypeptide chain</p>
+<figure>
+    <a href="images/common_aa_chart.png">
+    <img class="" src="images/common_aa_chart.png" width="1200">
+    </a>
+    
+    </figure>
+<br>
+<p>
+<div class="reference_footnote">Chemical Structure of the Twenty Common Amino Acids, <a href="http://www.compoundchem.com/2014/09/16/aminoacids/">Compound Interest</a></div></p>
 </section>
 </section><section class="vertical-stack">
 <section   class="vertical-slide">
@@ -156,26 +178,38 @@ Predict structure from sequence<h3>Sequence <svg class="latexSVG" height="100%" 
  </g>
 </svg> Function</h3></p>
 <br>
-<a href="images/energy_landscape.jpg">
+<figure>
+    <a href="images/energy_landscape.jpg">
     <img class="transparent_image" src="images/energy_landscape.jpg" height="300">
     </a>
-<video autoplay loop height="300">  
+    
+    </figure>
+<figure>
+    <video autoplay loop height="300">  
     <source src="images/ww_fold.m4v" type="video/mp4"> 
     </video>
+    
+    </figure>
 <p>
 Native structure, folding pathways, ...</p>
 <br>
 <p>
-<div class="reference_footnote">Energy Landscape by <a href="http://rsta.royalsocietypublishing.org/content/363/1827/453">Wolynes</a>, Folding Example of WW-domain by <a href="http://pubs.acs.org/doi/abs/10.1021/jp102575b">Best</a>, 2010.</div></p>
+<div class="reference_footnote">Energy Landscape by <a href="http://rsta.royalsocietypublishing.org/content/363/1827/453">Wolynes</a>, Explict solvent molecular dynamics folding simulation of WW-domain by <a href="http://pubs.acs.org/doi/abs/10.1021/jp102575b">Best</a>.</div></p>
 </section><section   class="vertical-slide">
 <p>
 <h2>Protein Modeling</h2>Coarse-grained depictions of proteins and their interactions<div class="fragment"></p>
-<a href="images/not_a_protein/the-treachery-of-images.jpg">
+<figure>
+    <a href="images/not_a_protein/the-treachery-of-images.jpg">
     <img class="" src="images/not_a_protein/the-treachery-of-images.jpg" height="375">
     </a>
-<a href="images/not_a_protein/Not_A_protein.png">
+    
+    </figure>
+<figure>
+    <a href="images/not_a_protein/Not_A_protein.png">
     <img class="" src="images/not_a_protein/Not_A_protein.png" height="375">
     </a>
+    
+    </figure>
 <br>
 <p>
 <div class="reference_footnote"><em>The Treachery of Images</em> by <a href="http://en.wikipedia.org/wiki/The_Treachery_of_Images">René Magritte</a></div><br></div></p>
@@ -186,7 +220,7 @@ Native structure, folding pathways, ...</p>
 <h3>Part 1: Disorder</h3></p>
 <br>
 <p>
-How do we make predictions about intrinsically disordered proteins<br><em>without sampling the entire conformational landscape</em>?</p>
+How do we make predictions about intrinsically disordered proteins<br><em>given their large conformational landscape</em>?</p>
 </section><section   class="vertical-slide">
 <p>
 <h2>Traditional "folding"</h2>Sample conformational space around the native structure,<br>along a folding pathway, or a specific event (e.g. binding).</p>
@@ -453,36 +487,54 @@ Computational techniques, such as molecular dynamics<br>work when you have a wel
  </g>
 </svg></h2></p>
 <br>
-<a href="images/1pcy/1pcy_cartoon.png">
+<figure>
+    <a href="images/1pcy/1pcy_cartoon.png">
     <img class="" src="images/1pcy/1pcy_cartoon.png" height="300">
     </a>
-<a href="images/1pcy/1pcy_sticks.png">
+    
+    </figure>
+<figure>
+    <a href="images/1pcy/1pcy_sticks.png">
     <img class="" src="images/1pcy/1pcy_sticks.png" height="300">
     </a>
-<a href="images/1pcy/1pcy_ultra_sidechain.png">
+    
+    </figure>
+<figure>
+    <a href="images/1pcy/1pcy_ultra_sidechain.png">
     <img class="" src="images/1pcy/1pcy_ultra_sidechain.png" height="300">
     </a>
-<a href="images/1pcy/1pcy_res_res.png">
+    
+    </figure>
+<figure>
+    <a href="images/1pcy/1pcy_res_res.png">
     <img class="" src="images/1pcy/1pcy_res_res.png" height="300">
     </a>
+    
+    </figure>
 <br>
 <p>
 <div class="reference_footnote"><a href="http://kinemage.biochem.duke.edu/databases/top8000.php">Protein database: Top 8000</a>, Richardson Group</div></p>
 </section><section  data-transition="fade" class="vertical-slide">
 <p>
 <h3>Residue-residue interaction matrix, MJ</h3></p>
-<a href="images/mj_potential/MJ_matrix.png">
+<figure>
+    <a href="images/mj_potential/MJ_matrix.png">
     <img class="transparent_image" src="images/mj_potential/MJ_matrix.png" height="700">
     </a>
+    
+    </figure>
 <br>
 <p>
 <div class="reference_footnote">Other statistical potentials: <a href="http://pubs.acs.org/doi/abs/10.1021/ma60054a013">Tanaka and Scheraga</a> (1976), <a href="http://www.ncbi.nlm.nih.gov/pubmed/2359125">Spil</a> (1990), <a href="http://www.ncbi.nlm.nih.gov/pubmed/8604144">Miyaza and Jernigan</a> (1996),<br><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/">Betancourt and Thirumalai</a> (1999), <a href="http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract">Skolnick, Kolinski and Ortiz</a> (2000)</div></p>
 </section><section  data-transition="fade" class="vertical-slide">
 <p>
 <h3>MJ matrix reveals biophysical structure</h3></p>
-<a href="images/mj_potential/MJ_matrix_remapped.png">
+<figure>
+    <a href="images/mj_potential/MJ_matrix_remapped.png">
     <img class="transparent_image" src="images/mj_potential/MJ_matrix_remapped.png" height="700">
     </a>
+    
+    </figure>
 <p>
 <div class="reference_footnote">H (hydrophobic), P (polar), C (charged); Analysis of Statistical Potentials by <a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.765">Li</a>.</div></p>
 </section>
@@ -932,30 +984,48 @@ Computational techniques, such as molecular dynamics<br>work when you have a wel
 </section><section  data-transition="fade" class="vertical-slide">
 <p>
 MJ contact energy reproduces MF energy</p>
-<a href="images/estimation_MF_MJ.png">
+<figure>
+    <a href="images/estimation_MF_MJ.png">
     <img class="transparent_image" src="images/estimation_MF_MJ.png" height="700">
     </a>
+    
+    </figure>
 </section><section  data-transition="none" class="vertical-slide">
 <p>
 Energy per residue still shows good correlation</p>
-<a href="images/estimation_MF_MJ_per_N.png">
+<figure>
+    <a href="images/estimation_MF_MJ_per_N.png">
     <img class="transparent_image" src="images/estimation_MF_MJ_per_N.png" height="700">
     </a>
+    
+    </figure>
 </section><section  data-transition="none" class="vertical-slide">
 <p>
 MF Energy distributions: Physically reasonable</p>
-<a href="images/mean_field_calc/average_self_energy.png">
+<figure>
+    <a href="images/mean_field_calc/average_self_energy.png">
     <img class="transparent_image" src="images/mean_field_calc/average_self_energy.png" height="325">
     </a>
-<a href="images/mean_field_calc/residue_propensity.png">
+    
+    </figure>
+<figure>
+    <a href="images/mean_field_calc/residue_propensity.png">
     <img class="transparent_image" src="images/mean_field_calc/residue_propensity.png" height="325">
     </a>
-<a href="images/mean_field_calc/MF_vs_hydrophilicity.png">
+    
+    </figure>
+<figure>
+    <a href="images/mean_field_calc/MF_vs_hydrophilicity.png">
     <img class="transparent_image" src="images/mean_field_calc/MF_vs_hydrophilicity.png" height="325">
     </a>
-<a href="images/mean_field_calc/MF_vs_Garbuzynskiy.png">
+    
+    </figure>
+<figure>
+    <a href="images/mean_field_calc/MF_vs_Garbuzynskiy.png">
     <img class="transparent_image" src="images/mean_field_calc/MF_vs_Garbuzynskiy.png" height="325">
     </a>
+    
+    </figure>
 <br>
 <p>
 <div class="reference_footnote"><a href="http://www.ncbi.nlm.nih.gov/pubmed/15657106">IDP Propensity</a>, <a href="http://www.ncbi.nlm.nih.gov/pubmed/7108955">Kyte-Doolittle</a>, <a href="http://www.ncbi.nlm.nih.gov/pubmed/20019059">Garbuzynskiy index</a></div></p>
@@ -996,7 +1066,7 @@ Pairwise decomposition of protein complex energy; Binding affinity <svg class="l
    <use x="12.122317" xlink:href="#equation_OIEIE_1" y="8.3065"/>
   </g>
  </g>
-</svg><h3><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 132.996442 9.665875" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</svg><h4><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 132.996442 9.665875" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <g>
    <symbol id="equation_ICCTP_12" overflow="visible">
@@ -1089,7 +1159,7 @@ Pairwise decomposition of protein complex energy; Binding affinity <svg class="l
    <use x="127.168317" xlink:href="#equation_ICCTP_2" y="8.3065"/>
   </g>
  </g>
-</svg></h3></p>
+</svg></h4></p>
 <br>
 <p>
 Contact matrix is not symmetric<h3><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 166.18945 12.8525" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1388,63 +1458,109 @@ Specificity: Define "decoys" as weakly bound structures in protein network.<h3><
   </g>
  </g>
 </svg></h3></p>
+<br>
+<p>
+<div class="reference_footnote">Z-scores of native protein structures, <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144000/">Zhang and Skolnick</a></div></p>
 </section>
 </section><section class="vertical-stack">
 <section  data-transition="default" class="vertical-slide">
 <p>
 <h2>Binding affinity</h2></p>
-<a href="images/binding_affinity.png">
+<figure>
+    <a href="images/binding_affinity.png">
     <img class="transparent_image" src="images/binding_affinity.png" height="700">
     </a>
+    
+    </figure>
 </section><section  data-transition="default" class="vertical-slide">
 <p>
 <h2>Binding specificity</h2></p>
-<a href="images/binding_specificity_1.png">
+<figure>
+    <a href="images/binding_specificity_1.png">
     <img class="transparent_image" src="images/binding_specificity_1.png" height="700">
     </a>
+    
+    </figure>
 </section><section  data-transition="default" class="vertical-slide">
 <p>
 <h2>MF IDP Summary:</h2></p>
 <ul><li>MF models reproduce MJ contact energies. MF IDP's bound to native structures show increased <em>specificity</em> with lower <em>affinity</em>.</li></ul>
 <p>
 <div class="fragment"></p>
-<a href="images/small_lattice/1.png">
-    <img class="transparent_image" src="images/small_lattice/1.png" height="150">
-    </a>
-<a href="images/small_lattice/2.png">
-    <img class="transparent_image" src="images/small_lattice/2.png" height="150">
-    </a>
-<a href="images/small_lattice/3.png">
-    <img class="transparent_image" src="images/small_lattice/3.png" height="150">
-    </a>
-<a href="images/small_lattice/4.png">
-    <img class="transparent_image" src="images/small_lattice/4.png" height="150">
-    </a>
-<a href="images/small_lattice/5.png">
-    <img class="transparent_image" src="images/small_lattice/5.png" height="150">
-    </a>
-<a href="images/small_lattice/6.png">
-    <img class="transparent_image" src="images/small_lattice/6.png" height="150">
-    </a>
-<br>
-<a href="images/small_lattice/7.png">
+<figure>
+    <a href="images/small_lattice/7.png">
     <img class="transparent_image" src="images/small_lattice/7.png" height="150">
     </a>
-<a href="images/small_lattice/8.png">
+    <figcaption>PDB:1B8A</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/2.png">
+    <img class="transparent_image" src="images/small_lattice/2.png" height="150">
+    </a>
+    <figcaption>1B0B</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/3.png">
+    <img class="transparent_image" src="images/small_lattice/3.png" height="150">
+    </a>
+    <figcaption>1BQ8</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/4.png">
+    <img class="transparent_image" src="images/small_lattice/4.png" height="150">
+    </a>
+    <figcaption>1DQP</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/5.png">
+    <img class="transparent_image" src="images/small_lattice/5.png" height="150">
+    </a>
+    <figcaption>1DOI</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/6.png">
+    <img class="transparent_image" src="images/small_lattice/6.png" height="150">
+    </a>
+    <figcaption>1C4Q</figcaption>
+    </figure>
+<br>
+<br>
+<figure>
+    <a href="images/small_lattice/1.png">
+    <img class="transparent_image" src="images/small_lattice/1.png" height="150">
+    </a>
+    <figcaption>1ARB</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/8.png">
     <img class="transparent_image" src="images/small_lattice/8.png" height="150">
     </a>
-<a href="images/small_lattice/9.png">
+    <figcaption>1BXU</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/9.png">
     <img class="transparent_image" src="images/small_lattice/9.png" height="150">
     </a>
-<a href="images/small_lattice/10.png">
+    <figcaption>1CC8</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/10.png">
     <img class="transparent_image" src="images/small_lattice/10.png" height="150">
     </a>
-<a href="images/small_lattice/11.png">
+    <figcaption>1CJC</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/11.png">
     <img class="transparent_image" src="images/small_lattice/11.png" height="150">
     </a>
-<a href="images/small_lattice/12.png">
+    <figcaption>1DFU</figcaption>
+    </figure>
+<figure>
+    <a href="images/small_lattice/12.png">
     <img class="transparent_image" src="images/small_lattice/12.png" height="150">
     </a>
+    <figcaption>1DMG</figcaption>
+    </figure>
 <br>
 <p>
 <em>What's next?</em> Add structure to mean field calculations.<br>Lattices may be optimal for IDP's, they can reproduce native-energies but quickly sample extended conformational space.<br></div></p>
@@ -1459,30 +1575,45 @@ How do we predict phase separations of protein solutions?</p>
 </section><section  data-transition="default" class="vertical-slide">
 <p>
 <h3>Higher order structure</h3>Phase separations lead to sudden changes in liquid structure.</p>
-<a href="images/macrocharge/example_phase_sep.jpg">
+<figure>
+    <a href="images/macrocharge/example_phase_sep.jpg">
     <img class="transparent_image" src="images/macrocharge/example_phase_sep.jpg" height="225px">
     </a>
-<a href="images/macrocharge/phase_sep2.jpg">
+    
+    </figure>
+<figure>
+    <a href="images/macrocharge/phase_sep2.jpg">
     <img class="transparent_image" src="images/macrocharge/phase_sep2.jpg" height="225px">
     </a>
+    
+    </figure>
 <br>
 <p>
-How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>predict</strong> aggregates?</p>
-<a href="images/macrocharge/1AO6_cartoon.png">
+How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>predict</strong> aggregates from experimental structure?</p>
+<figure>
+    <a href="images/macrocharge/1AO6_cartoon.png">
     <img class="transparent_image" src="images/macrocharge/1AO6_cartoon.png" height="225px">
     </a>
-<a href="images/macrocharge/1OVA_cartoon.png">
+    <figcaption>Human serum albumin<br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1ao6">PDB:1AO6</a></figcaption>
+    </figure>
+<figure>
+    <a href="images/macrocharge/1OVA_cartoon.png">
     <img class="transparent_image" src="images/macrocharge/1OVA_cartoon.png" height="225px">
     </a>
-<a href="images/macrocharge/1W6Z_cartoon.png">
+    <figcaption>Ovalbumin<br><a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">PDB:1OVA</a></figcaption>
+    </figure>
+<figure>
+    <a href="images/macrocharge/1W6Z_cartoon.png">
     <img class="transparent_image" src="images/macrocharge/1W6Z_cartoon.png" height="225px">
     </a>
-<a href="images/macrocharge/3V03_cartoon.png">
+    <figcaption>Lysozyme <br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1w6z">PDB:1W6Z</a></figcaption>
+    </figure>
+<figure>
+    <a href="images/macrocharge/3V03_cartoon.png">
     <img class="transparent_image" src="images/macrocharge/3V03_cartoon.png" height="225px">
     </a>
-<br>
-<p>
-<div class="reference_footnote">Human serum albumin <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1ao6">(1AO6)</a>, Ovalbumin <a href="http://www.rcsb.org/pdb/explore.do?structureId=1ova">(1OVA)</a>, Lysozyme <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1w6z">(1W6Z)</a>, Bovine Serum Albumin <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03">(3V03)</a> respectively.</div></p>
+    <figcaption>Bovine Serum Albumin<br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03">PDB:3V03</a></figcaption>
+    </figure>
 </section><section  data-transition="default" class="vertical-slide">
 <p>
 <h2>Protein-Protein interactions</h2></p>
@@ -1514,9 +1645,12 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
   </g>
  </g>
 </svg>, measurement of<br>protein solutions using light scattering at different pH.</p>
-<a href="images/macrocharge/exp_B22_1OVA.png">
+<figure>
+    <a href="images/macrocharge/exp_B22_1OVA.png">
     <img class="" src="images/macrocharge/exp_B22_1OVA.png" height="600px">
     </a>
+    
+    </figure>
 </section><section  data-transition="none" class="vertical-slide">
 <p>
 <h2>Matching experiments</h2>Theoretical predictions of the second virial coefficient <svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 10.65075 8.3065" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1539,9 +1673,12 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
   </g>
  </g>
 </svg><br>considering only excluded volume and reduced electrostatics.</p>
-<a href="images/macrocharge/fit_B22_1OVA.png">
+<figure>
+    <a href="images/macrocharge/fit_B22_1OVA.png">
     <img class="" src="images/macrocharge/fit_B22_1OVA.png" height="600px">
     </a>
+    
+    </figure>
 </section><section  data-transition="default" class="vertical-slide">
 <p>
 <h2>Virial Coefficients</h2></p>
@@ -1976,12 +2113,15 @@ For rotationally invariant molecules*<h2><svg class="latexSVG" height="100%" ver
 <section  data-transition="default" class="vertical-slide">
 <p>
 <h1>The Process</h1></p>
-<a href="images/macrocharge/human_serum_albumin_1e7h.png">
+<figure>
+    <a href="images/macrocharge/human_serum_albumin_1e7h.png">
     <img class="transparent_image" src="images/macrocharge/human_serum_albumin_1e7h.png" >
     </a>
+    
+    </figure>
 <br>
 <p>
-Start with the crystallized PDB Structure (HSA)</p>
+Start with the crystallized PDB Structure<br><em>e.g.</em> Human Serum Albumin <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1ao6"">PDB:1A06</a></p>
 </section><section  data-transition="default" class="vertical-slide">
 <p>
 <h2>Electrostatics</h2><h2><svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 179.93025 26.076625" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -2158,12 +2298,18 @@ Start with the crystallized PDB Structure (HSA)</p>
 <br>
 <p>
 Adaptive <a href="http://thoppe.github.io/Presentation_Research_Macrocharge/#/6/2">Poisson-Boltzmann</a> Solver (APBS), approximate electrostatic field:</p>
-<a href="images/macrocharge/human_serum_albumin_1e7h_ALPHA.png">
+<figure>
+    <a href="images/macrocharge/human_serum_albumin_1e7h_ALPHA.png">
     <img class="transparent_image" src="images/macrocharge/human_serum_albumin_1e7h_ALPHA.png" height="300">
     </a>
-<a href="images/macrocharge/human_serum_albumin_1e7h_pH_4.01886800_field.png">
+    
+    </figure>
+<figure>
+    <a href="images/macrocharge/human_serum_albumin_1e7h_pH_4.01886800_field.png">
     <img class="" src="images/macrocharge/human_serum_albumin_1e7h_pH_4.01886800_field.png" height="300">
     </a>
+    
+    </figure>
 <br>
 <p>
 Typically (in the absence of ions), <svg class="latexSVG" height="100%" version="1.2" viewBox="0 0 46.132188 8.197125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -2373,12 +2519,18 @@ Typically (in the absence of ions), <svg class="latexSVG" height="100%" version=
 <p>
 <h2>Decompose the field</h2></p>
 <br>
-<a href="images/macrocharge/HSA_1E7H_spheres.png">
+<figure>
+    <a href="images/macrocharge/HSA_1E7H_spheres.png">
     <img class="transparent_image" src="images/macrocharge/HSA_1E7H_spheres.png" height="300">
     </a>
-<a href="images/macrocharge/superposition_SPH.png">
+    
+    </figure>
+<figure>
+    <a href="images/macrocharge/superposition_SPH.png">
     <img class="transparent_image" src="images/macrocharge/superposition_SPH.png" height="300">
     </a>
+    
+    </figure>
 <br>
 <p>
 Determine a region of excluded volume.<br>Spherical Harmonic decomposition for large distances.</p>
@@ -2386,12 +2538,18 @@ Determine a region of excluded volume.<br>Spherical Harmonic decomposition for l
 <p>
 <h2>Macrocharge fitting</h2></p>
 <br>
-<a href="images/macrocharge/HSA_real.png">
+<figure>
+    <a href="images/macrocharge/HSA_real.png">
     <img class="transparent_image" src="images/macrocharge/HSA_real.png" >
     </a>
-<a href="images/macrocharge/HSA_fit.png">
+    
+    </figure>
+<figure>
+    <a href="images/macrocharge/HSA_fit.png">
     <img class="transparent_image" src="images/macrocharge/HSA_fit.png" >
     </a>
+    
+    </figure>
 <br>
 <p>
 Best fit macrocharges to approximate the field.</p>
@@ -2416,22 +2574,38 @@ Use the model in higher-order simulations to predict<br>phase behavior via Gibb'
 </section><section class="vertical-stack">
 <section  data-transition="default" class="vertical-slide">
 <p>
-<h3>Additional research</h3>Crowding, surface adsorption and protein fibrillation, <a href="http://www.cell.com/biophysj/home">Biophys</a> (in press).<br>Programmable Nanoscaffolds and Multivalent Effects, <a href="http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html">JACS</a>.<br>Integer sequence discovery from small graphs, <a href="http://arxiv.org/abs/1408.3644">Discrete Math.</a> (submitted).<br>Dependence of Internal Friction on Folding Mechanism, <a href="http://pubs.acs.org/journal/jacsat">JACS</a> (in press).<br>Quantification of plasma HIV RNA, <a href="http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html">Nature Comm</a>.</p>
-<a href=test><a href="images/other_research/crowding_all.png">
-    <img class="" src="images/other_research/crowding_all.png" height="300">
-    </a></a>
-<a href="images/other_research/nanoscaffolds.jpeg">
-    <img class="" src="images/other_research/nanoscaffolds.jpeg" height="300">
+<h4><em>Ongoing research</em></h4>Crowding, surface adsorption and protein fibrillation, <a href="http://www.cell.com/biophysj/home">Biophys</a> (in press).<br>Programmable Nanoscaffolds and Multivalent Effects, <a href="http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html">JACS</a>.<br>Integer sequence discovery from small graphs, <a href="http://arxiv.org/abs/1408.3644">Discrete Math.</a> (submitted).<br>Dependence of Internal Friction on Folding Mechanism, <a href="http://pubs.acs.org/journal/jacsat">JACS</a> (in press).<br>Quantification of plasma HIV RNA, <a href="http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html">Nature Comm</a>.</p>
+<figure>
+    <a href="images/other_research/crowding_all.png">
+    <img class="" src="images/other_research/crowding_all.png" height="250">
     </a>
-<a href="images/other_research/combined_subgraphs2.png">
-    <img class="" src="images/other_research/combined_subgraphs2.png" height="300">
+    <figcaption>Minton: <i>NIH Physical Biochemistry</i></figcaption>
+    </figure>
+<figure>
+    <a href="images/other_research/nanoscaffolds.jpeg">
+    <img class="" src="images/other_research/nanoscaffolds.jpeg" height="250">
     </a>
-<a href="images/other_research/internal_friction.jpg">
+    <figcaption>Zhao: <i>NIH Bioorganic Chemistry</i></figcaption>
+    </figure>
+<figure>
+    <a href="images/other_research/combined_subgraphs2.png">
+    <img class="" src="images/other_research/combined_subgraphs2.png" height="250">
+    </a>
+    <figcaption>Petrone:  <i>Univ. Maryland</i></figcaption>
+    </figure>
+<br>
+<figure>
+    <a href="images/other_research/internal_friction.jpg">
     <img class="" src="images/other_research/internal_friction.jpg" height="150">
     </a>
-<a href="images/other_research/hiv_detection.jpg">
+    <figcaption>Best, Zheng: <i>NIH Chemical Physics</i></figcaption>
+    </figure>
+<figure>
+    <a href="images/other_research/hiv_detection.jpg">
     <img class="" src="images/other_research/hiv_detection.jpg" height="150">
     </a>
+    <figcaption>Dix, Appella: <i>NIH Bioorganic Chemistry</i></figcaption>
+    </figure>
 </section>
 </section><section class="vertical-stack">
 <section  data-transition="default" class="vertical-slide">

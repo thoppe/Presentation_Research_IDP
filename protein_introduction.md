@@ -44,5 +44,5 @@ Imagination must be constrained by reality.
 !(images/not_a_protein/the-treachery-of-images.jpg) <<height:375>>
 !(images/not_a_protein/Not_A_protein.png)           <<height:375>>
 
-Protein models must as simple as possible (but no simpler).
+Models must as simple as possible (but no simpler).
 && _The Treachery of Images_ by [René Magritte](http://en.wikipedia.org/wiki/The_Treachery_of_Images)

@@ -80,25 +80,30 @@ Spherical Harmonic decomposition for large distances.
 
 ## Macrocharge fitting
 
+
+<br>
+<br>
 !(images/macrocharge/HSA_real.png) <<transparent>>
 !(images/macrocharge/HSA_fit.png)  <<transparent>>
 
 Best fit macrocharges to approximate the field.
+<br>
+<br>
 
-&& _A Simplified Representation of Anisotropic Charge Distributions within Proteins_, Hoppe [J. Chem. Phys.  138, 174110](http://scitation.aip.org/content/aip/journal/jcp/138/17/10.1063/1.4803099)
+&& _A Simplified Representation of Anisotropic Charge Distributions within Proteins_, Hoppe  [J. Chem. Phys.  138, 174110](http://scitation.aip.org/content/aip/journal/jcp/138/17/10.1063/1.4803099)
 
 ====<<transition:none>>
 
 ## Matching experiments
 Theoretical predictions of the second virial coefficient $B_{2}$
 considering only excluded volume and reduced electrostatics.
-!(images/macrocharge/fit_B22_1OVA.png) <<height:600px;>>
+!(images/macrocharge/exp_B22_1OVA.png) <<height:600px;>>
 
 ====*<<transition:none>>
 ## Matching experiments
 Theoretical predictions of the second virial coefficient $B_{2}$
 considering only excluded volume and reduced electrostatics.
-!(images/macrocharge/exp_B22_1OVA.png) <<height:600px;>>
+!(images/macrocharge/fit_B22_1OVA.png) <<height:600px;>>
 
 ====*<<transition:default>>
 ### Phase separations summary

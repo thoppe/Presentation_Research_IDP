@@ -78,7 +78,7 @@ Residue-residue interactions, quasi-chemical lattice-gas
 MJ contact energy reproduces MF energy
 !(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
 
-&& <a href="images/estimationMFMJperN.png">Energy per residue</a> still good correlation as well.
+&& <a href="images/estimationMFMJperN.png">Energy per residue</a> shows good correlation as well.
 
 ====
 MF Energy distributions: Physically reasonable
@@ -97,7 +97,7 @@ MF Energy distributions: Physically reasonable
 + Measure binding *specificity* of protein to surfaces.
 
 
-!(images/yeast_network_interaction.jpg Example network: All protein-protien interactions in yeast, <i>S. cerevisiae</i>.)
+!(images/yeast_network_interaction.jpg Example network: Protein-protein interactions in yeast, <i>S. cerevisiae</i>.)
 
 % [Yeast interactions](http://www.ncbi.nlm.nih.gov/pubmed/11101803)
 

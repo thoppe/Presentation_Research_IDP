@@ -44,17 +44,17 @@ def plot_residue_matrix(A, rename=False):
 
     cols = list(A.index)
     cols = [x if x not in hydrophobic_res else 
-            r"${}^h$".format(x)
+            r"{}$^h$".format(x)
             for x in cols]
     cols = [x if x not in charged_res else 
-            r"${}^c$".format(x)
+            r"{}$^c$".format(x)
             for x in cols]
     cols = [x if x not in polar_res else 
-            r"${}^p$".format(x)
+            r"{}$^p$".format(x)
             for x in cols]
     if not rename: 
         cols = list(A.index)
-        cols = [r"${}$".format(x) for x in cols]     
+        cols = [r"{}".format(x) for x in cols]     
 
     ax.set_xticks(np.linspace(0, n-1, n))
     ax.set_xticklabels(cols)
@@ -67,6 +67,8 @@ def plot_residue_matrix(A, rename=False):
                    which='major', labelsize=20)
     cbar = plt.colorbar(fraction=.046, pad=0.04)
     cbar.ax.tick_params(labelsize=20) 
+    cbar.set_label(r"Residue-residue interaction $U_{ij}/kT$", 
+                   fontsize=25)
 
     for tick in ax.yaxis.get_major_ticks():
         tick.tick1line.set_markersize(0)

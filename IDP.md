@@ -61,7 +61,7 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ====
 
 ### MJ Contact energy, from structure
-# $U_\text{MJ} = \sum_{i=1}^N \sum_{j>i}^N E_{ij}  \quad \quad \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
+# $U_\text{MJ} = \sum_{i=1}^N \sum_{j>i}^N E_{ij} \Theta(|r_i - r_j| - r_\text{cutoff}) \quad \quad \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
 ====+
 <br>
 <br>

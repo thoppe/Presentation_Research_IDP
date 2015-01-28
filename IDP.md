@@ -1,51 +1,56 @@
 ### Paradigm shift
-Protiens were thought to adopt stable, folded conformations.
+Proteins were thought to adopt stable, folded conformations.
 Solving the structure was paramount for understanding the function.
 ====+
 
 <br>
 ### Unexpected: disorder is abundant!
-!(images/yeast_grouping_gsponer-2008.jpg Grouping proteins in the yeast proteome)<<height:500;transparent>>
+!(images/yeast_grouping_gsponer-2008.jpg Grouping proteins in the yeast proteome, <a href="http://www.ncbi.nlm.nih.gov/pubmed/19039133">Gsponer</a>)<<height:500;transparent>>
 
 ====*
 
 ## Intrinsically disordered proteins
-
 |### Structure
 + Lack *tertiary structure* (disorder!)
 + Still may form secondary structure
 + Different *primary structure* (residue propensity)
 + More charged, less hydrophobic and aromatic residues
-!(images/1BRS_barnase_barstar/1BRS_complex.png Lock and Key<br>Barnase-Barstar complex) <<height:300;transparent>>
+|### Binding
+!(images/1BRS_barnase_barstar/1BRS_complex.png Not disordered, Lock and Key<br>Barnase-Barstar complex) <<height:300;transparent>>
 !(images/1L8C_HIF1_CBP/1L8C.png Disorder-to-order<br>Hif-1 a/CBP) <<height:300;transparent>>
 !(images/SIC1_disordered_protein_mittag.png Always disordered<br>SIC1 binding to CDC4)<<height:300;transparent>>
 ====*
 
+|### Theory
++ What advantages do IDPs have over traditional proteins?
++ Recognition that the cellular environment is a crowded place.
+
+
 |### Function
 + Often found in signaling pathways, centers of protein hubs
-+ Linkers and Spacers (entropic chains), Chaperones
-+ Binding *specificity*, with *low affinity*
++ Linkers (entropic chains), Chaperones, HIV transcription [(TAT)](http://www.ncbi.nlm.nih.gov/pubmed/16423825)
++ Binding *specificity*, with *lower affinity*
 
 
 |### Modeling
 ## IDPs: Folding $\Rightarrow$ Sampling
 
-
-_Goal is to develop physical representation to model IDP interactions._
+_Goal: Develop a model for IDP interactions._
 
 ====
 
 ## Statistical Potentials
 Residue-residue interactions, quasi-chemical lattice-gas
 
-## $U_{a,b} = -kT \ln \frac{p_{\text{obs}}(a,b)}{p_\text{exp}(a,b)} \approx -kT \ln \frac{N_\text{obs}(a,b)}{N_\text{exp}(a,b)}$
+## $U_{a,b} = -kT \ln \frac{p_{\text{obs}}(a,b)}{p_\text{expt}(a,b)} \approx -kT \ln \frac{N_\text{obs}(a,b)}{N_\text{expt}(a,b)}$
 
 !(images/1pcy/1pcy_cartoon.png) <<height:300>>
 !(images/1pcy/1pcy_sticks.png) <<height:300>>
 !(images/1pcy/1pcy_ultra_sidechain.png) <<height:300>>
 !(images/1pcy/1pcy_res_res.png) <<height:300>>
 
-&& [Protein database: Top 8000](http://kinemage.biochem.duke.edu/databases/top8000.php), Richardson Group
+&& Potentials constructed from Top 8000 Protein Database, [Richardson Group](http://kinemage.biochem.duke.edu/databases/top8000.php)
+
 
 ====*<<transition:fade>>
 
@@ -61,7 +66,7 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ====
 
 ### MJ Contact energy, from structure
-# $U_\text{MJ} = \sum_{i=1}^N \sum_{j>i}^N E_{ij} \Theta(|r_i - r_j| - r_\text{cutoff}) \quad \quad \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
+# $U_\text{MJ} = \underset{r_i, r_j \text{in contact}}{\sum_{i=1}^N \sum_{j>i}^N E_{ij}} \quad \quad \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
 ====+
 <br>
 <br>
@@ -73,14 +78,12 @@ Residue-residue interactions, quasi-chemical lattice-gas
 MJ contact energy reproduces MF energy
 !(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
 
-====*<<transition:none>>
-Energy per residue still shows good correlation
-!(images/estimation_MF_MJ_per_N.png) <<transparent; height:700>> 
+&& <a href="images/estimationMFMJperN.png">Energy per residue</a> still good correlation as well.
 
-====*<<transition:none>>
+====
 MF Energy distributions: Physically reasonable
-!(images/mean_field_calc/average_self_energy.png)  <<transparent; height:325>>
 !(images/mean_field_calc/residue_propensity.png)   <<transparent; height:325>>
+!(images/mean_field_calc/average_self_energy.png)  <<transparent; height:325>>
 !(images/mean_field_calc/MF_vs_hydrophilicity.png) <<transparent; height:325>>
 !(images/mean_field_calc/MF_vs_Garbuzynskiy.png)   <<transparent; height:325>>
 
@@ -89,10 +92,14 @@ MF Energy distributions: Physically reasonable
 ====<<transition:default>>
 
 ## Protein Networks
++ Target protein (native-like or IDP) interacts with a range of possible surfaces.
++ Measure average binding *affinity* of protein to surfaces.
++ Measure binding *specificity* of protein to surfaces.
 
-+ Target protein (native-like or IDP) interacts with a range of possible surfaces
-+ Measure average binding *affinity* of protein to surfaces
-+ Measure binding *specificity* of protein to surfaces
+
+!(images/yeast_network_interaction.jpg Example network: All protein-protien interactions in yeast, <i>S. cerevisiae</i>.)
+
+% [Yeast interactions](http://www.ncbi.nlm.nih.gov/pubmed/11101803)
 
 ====*
 
@@ -104,10 +111,11 @@ Pairwise decomposition of protein complex energy; Binding affinity $U_{AB}$
 Contact matrix is not symmetric
 ### $n_{AB, \text{contact}}(\alpha, \beta) = X_{A_\alpha} X_{B_\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
-Specificity: Define "decoys" as weakly bound structures in protein network.
+Specificity score: Define "decoys" as weakly bound 
+structures in protein network.
 ### $Z_{E} = \left ( \left< E_{\text{decoy}} \right > - E_{\text{target}} \right ) / \sigma(E_\text{decoy})$
 
-&& Z-scores of native protein structures, [Zhang and Skolnick](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144000/)
+%&& Z-scores of native protein structures, [Zhang and Skolnick](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144000/)
 
 ====
 ## Binding affinity

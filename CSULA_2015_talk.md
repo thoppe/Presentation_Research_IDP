@@ -24,7 +24,7 @@ _given their large conformational landscape_?
 
 How do we predict phase separations of protein solutions?
 ====*
-### Acknowledgements:
+### Acknowledgments:
 #### Laboratory of Chemical Physics
 !(images/people/robert.jpg Robert Best) <<height:225>>
 !(images/people/wenwei.jpg Wenwei Zheng) <<height:225>>
@@ -61,19 +61,22 @@ How do we predict phase separations of protein solutions?
 
 ====
 
-#### _Ongoing research_
+#### _Active research projects & Collaborations_
 Crowding, surface adsorption and protein fibrillation, [Biophys](http://www.cell.com/biophysj/home) (in press).
 Programmable Nanoscaffolds and Multivalent Effects, [JACS](http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html).
 Integer sequence discovery from small graphs, [Discrete Math.](http://arxiv.org/abs/1408.3644) (submitted).
-Dependence of Internal Friction on Folding Mechanism, [JACS](http://pubs.acs.org/journal/jacsat) (in press).
+Dependence of Internal Friction on Folding Mechanism, [JACS](http://pubs.acs.org/journal/jacsat) (submitted).
 Quantification of plasma HIV RNA, [Nature Comm](http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html).
 %
-!(images/other_research/crowding_all.png Minton: <i>NIH Physical Biochemistry</i>) <<height:250>>
-!(images/other_research/nanoscaffolds.jpeg Zhao: <i>NIH Bioorganic Chemistry</i>) <<height:250>>
-!(images/other_research/combined_subgraphs2.png Petrone:  <i>Univ. Maryland</i>) <<height:250>>
+%!(images/other_research/crowding_all.png Minton: <i>NIH Physical Biochemistry</i>) <<height:250>>
+%!(images/other_research/nanoscaffolds.jpeg Zhao: <i>NIH Bioorganic Chemistry</i>) <<height:250>>
+%!(images/other_research/combined_subgraphs2.png Petrone:  <i>Univ. Maryland</i>) <<height:250>>
+!(images/other_research/crowding_all.png Allen Minton) <<height:250>>
+!(images/other_research/nanoscaffolds.jpeg Andrew Dix, Daniel Appella, et. al.) <<height:250>>
+!(images/other_research/combined_subgraphs2.png Anna Petrone) <<height:250>>
 
-!(images/other_research/internal_friction.jpg Best, Zheng: <i>NIH Chemical Physics</i>) <<height:150>>
-!(images/other_research/hiv_detection.jpg Dix, Appella: <i>NIH Bioorganic Chemistry</i>) <<height:150>>
+!(images/other_research/internal_friction.jpg Robert Best, Wenwei Zheng) <<height:150>>
+!(images/other_research/hiv_detection.jpg Zhao, Daniel Appella, et. al.) <<height:150>>
 
 ====
 <br><br><br><br>

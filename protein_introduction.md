@@ -31,16 +31,18 @@ Predict structure from sequence
 !(images/ww_fold.m4v) <<height:300>>
 Native structure, folding pathways, ...
 
-&& Energy Landscape by [Wolynes](http://rsta.royalsocietypublishing.org/content/363/1827/453), Explict solvent molecular dynamics folding simulation of WW-domain by [Best](http://pubs.acs.org/doi/abs/10.1021/jp102575b).
+&& Energy Landscape by [Wolynes](http://rsta.royalsocietypublishing.org/content/363/1827/453), Explicit solvent molecular dynamics folding simulation of WW-domain by [Best](http://pubs.acs.org/doi/abs/10.1021/jp102575b).
 
 ====*
 
-## Protein Modeling
-Coarse-grained depictions of proteins and their interactions
+## Scientific Philosophy
+Theoreticians need to keep in close contact with experimentalists.
+Imagination must be constrained by reality.
 
 ====+
 
 !(images/not_a_protein/the-treachery-of-images.jpg) <<height:375>>
 !(images/not_a_protein/Not_A_protein.png)           <<height:375>>
 
+Protein models must as simple as possible (but no simpler).
 && _The Treachery of Images_ by [René Magritte](http://en.wikipedia.org/wiki/The_Treachery_of_Images)

@@ -7,5 +7,6 @@
     "minScale": 0.2, 
     "width": 1200,
     "mouseWheel":"true",
-    "slideNumber": "true"
+    "slideNumber": "true",
+    "controls": "false"
 }

@@ -1,7 +1,7 @@
 ### Higher order structure
 Phase separations lead to sudden changes in liquid structure.
-!(images/macrocharge/example_phase_sep.jpg) <<height:225px;transparent>> 
-!(images/macrocharge/phase_sep2.jpg) <<height:225px;transparent>> 
+!(images/macrocharge/example_phase_sep.jpg) <<height:225px;transparent>> Leibler, [Nature 2004](http://www.nature.com/nature/journal/v430/n6999/abs/nature02758.html)
+!(images/macrocharge/phase_sep2.jpg) <<height:225px;transparent>> Tanaka, [Phys. Rev. E 2005](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.72.041509)
 
 How do we model _many_ protein-protein interactions? 
 Can we *predict* aggregates from experimental structure? 
@@ -15,12 +15,12 @@ Can we *predict* aggregates from experimental structure?
 ## Protein-Protein interactions 
 
 |### Important terms:
-Volume exclusion, *Electrostatics*, 
+Volume exclusion, *Electrostatics*, solvent effects,
 Non-specific interactions (London/dispersion forces)
 
 |### Second-order effects?
-Non spherical geometries, Polarization,
-Internal conformational energies, Solvent effects
+Non spherical geometries, polarization,
+internal conformational energies, ...
 
 
 _Need a way of validating model._
@@ -68,42 +68,31 @@ Typically (in the absence of ions), $\epsilon_{\text{water}} = 80$ and $\epsilon
 && APBS by Baker et al. [Proc. Natl. Acad. Sci. 2001](http://www.pnas.org/content/98/18/10037), Bjerrum length $\lambda_B = {e^2}/{4\pi \varepsilon_0 \varepsilon_r \  k_B T}$
 
 ====*
-## Decompose the field
-
-!(images/macrocharge/HSA_1E7H_spheres.png) <<transparent;height:300>>
-!(images/macrocharge/superposition_SPH.png) <<transparent;height:300>>
-
-Determine a region of excluded volume.
-Spherical Harmonic decomposition for large distances.
-
-====*
-
 ## Macrocharge fitting
-
-
-<br>
-<br>
-!(images/macrocharge/HSA_real.png) <<transparent>>
-!(images/macrocharge/HSA_fit.png)  <<transparent>>
-
 Best fit macrocharges to approximate the field.
-<br>
-<br>
-
-&& _A Simplified Representation of Anisotropic Charge Distributions within Proteins_, Hoppe  [J. Chem. Phys.  138, 174110](http://scitation.aip.org/content/aip/journal/jcp/138/17/10.1063/1.4803099)
-
+!(images/macrocharge/HSA_real.png) <<transparent;height:200>>
+!(images/macrocharge/HSA_fit.png)  <<transparent;height:200>>
+====+
+------
+!(images/macrocharge/HSA_1E7H_spheres.png) <<transparent;height:250>>
+!(images/macrocharge/superposition_SPH.png) <<transparent;height:250>>
+Decompose the field, determine a region of excluded volume +
+spherical harmonic decomposition for large distances.
+   
 ====<<transition:none>>
 
 ## Matching experiments
 Theoretical predictions of the second virial coefficient $B_{2}$
 considering only excluded volume and reduced electrostatics.
-!(images/macrocharge/exp_B22_1OVA.png) <<height:600px;>>
+!(images/macrocharge/exp_B22_1OVA.png) <<height:550px;>>
 
 ====*<<transition:none>>
 ## Matching experiments
 Theoretical predictions of the second virial coefficient $B_{2}$
 considering only excluded volume and reduced electrostatics.
-!(images/macrocharge/fit_B22_1OVA.png) <<height:600px;>>
+!(images/macrocharge/fit_B22_1OVA.png) <<height:550px;>>
+
+&& _A Simplified Representation of Anisotropic Charge Distributions within Proteins_, Hoppe,  [J. Chem. Phys. (2013)](http://scitation.aip.org/content/aip/journal/jcp/138/17/10.1063/1.4803099)
 
 ====*<<transition:default>>
 ### Phase separations summary

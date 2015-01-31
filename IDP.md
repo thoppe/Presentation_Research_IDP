@@ -5,7 +5,7 @@ Solving the structure was paramount for understanding the function.
 
 <br>
 ### Unexpected: disorder is abundant!
-!(images/yeast_grouping_gsponer-2008.jpg)<<height:500;transparent>>  Grouping proteins in the yeast proteome, [Gsponer](http://www.ncbi.nlm.nih.gov/pubmed/19039133)
+!(images/yeast_grouping_gsponer-2008.jpg)<<height:500;transparent>>  Grouping proteins in the yeast proteome, Gsponer, [Science (2008)](http://www.ncbi.nlm.nih.gov/pubmed/19039133)
 
 ====*
 
@@ -17,7 +17,7 @@ Solving the structure was paramount for understanding the function.
 + More charged, less hydrophobic and aromatic residues
 |### Binding
 !(images/1BRS_barnase_barstar/1BRS_complex.png)  <<height:300;transparent>> Not disordered, Lock and Key<br>Barnase-Barstar complex
-!(images/1L8C_HIF1_CBP/1L8C.png) <<height:300;transparent>> Disorder-to-order<br>Hif-1 a/CBP
+!(images/1L8C_HIF1_CBP/1L8C.png) <<height:300;transparent>> Disorder-to-order<br>Hif-1 α/CBP
 !(images/SIC1_disordered_protein_mittag.png) <<height:300;transparent>> Always disordered<br>SIC1 binding to CDC4
 ====*
 
@@ -62,7 +62,8 @@ Residue-residue interactions, quasi-chemical lattice-gas
 ====*<<transition:fade>>
 ### MJ matrix reveals biophysical structure
 !(images/mj_potential/MJ_matrix_remapped.png)  <<transparent; height:700>>
-&& H (hydrophobic), P (polar), C (charged); Analysis of Statistical Potentials by [Li](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.765).
+&& H (hydrophobic), P (polar), C (charged)
+%Analysis of Statistical Potentials by [Li](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.765).
 ====
 
 ### MJ Contact energy, from structure
@@ -82,25 +83,23 @@ MJ contact energy reproduces MF energy
 
 ====
 MF Energy distributions: Physically reasonable
-!(images/mean_field_calc/residue_propensity.png)   <<transparent; height:325>>
-!(images/mean_field_calc/average_self_energy.png)  <<transparent; height:325>>
-!(images/mean_field_calc/MF_vs_hydrophilicity.png) <<transparent; height:325>>
-!(images/mean_field_calc/MF_vs_Garbuzynskiy.png)   <<transparent; height:325>>
+!(images/mean_field_calc/residue_propensity.png)   <<transparent; height:320>>
+!(images/mean_field_calc/average_self_energy.png)  <<transparent; height:320>>
+!(images/mean_field_calc/MF_vs_hydrophilicity.png) <<transparent; height:320>>
+!(images/mean_field_calc/MF_vs_Garbuzynskiy.png)   <<transparent; height:320>>
 
-&& [IDP Propensity](http://www.ncbi.nlm.nih.gov/pubmed/15657106), [Kyte-Doolittle](http://www.ncbi.nlm.nih.gov/pubmed/7108955), [Garbuzynskiy index](http://www.ncbi.nlm.nih.gov/pubmed/20019059)
+
+&& IDP Propensity, Coeytaux & Poupon, [Bioinformatics (2005)](http://www.ncbi.nlm.nih.gov/pubmed/15657106)<br>Hydrophilicity index, Kyte & Doolittle, [J. Mol. Biol. (1982)](http://www.ncbi.nlm.nih.gov/pubmed/7108955)<br>Amyloidogenic regions, Garbuzynskiy et. al. [Bioinformatics (2010)](http://www.ncbi.nlm.nih.gov/pubmed/20019059)
 
 ====<<transition:default>>
 
 ## Protein Networks
-+ Target protein (native-like or IDP) interacts with a range of possible surfaces.
++ Target protein interacts with a range of possible surfaces.
 + Measure average binding *affinity* of protein to surfaces.
 + Measure binding *specificity* of protein to surfaces.
 
 
-!(images/yeast_network_interaction.jpg) Example network: Protein-protein interactions in yeast, _S. cerevisiae_.
-
-
-% [Yeast interactions](http://www.ncbi.nlm.nih.gov/pubmed/11101803)
+!(images/yeast_network_interaction.jpg) Example network: Protein-protein interactions in yeast, _S. cerevisiae_<br>Schwikowski & Fields et al., [Nature 2000](http://www.ncbi.nlm.nih.gov/pubmed/11101803).
 
 ====*
 

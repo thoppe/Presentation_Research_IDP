@@ -11,7 +11,7 @@
 !(images/1ova/Ovalbummin_aggregate.gif) <<height:340;transparent>>  Higher-order structure<br>complexes, aggregation
 
 
-&& Ovalbumin, Egg white protein [PDB:1OVA](http://www.rcsb.org/pdb/explore.do?structureId=1ova), Crystal Structure resolved by [Carrell](http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract), SEM Aggregate structure by [Johnson](http://ps.oxfordjournals.org/content/60/9/2071.abstract)
+&& Ovalbumin, Egg white protein [PDB:1OVA](http://www.rcsb.org/pdb/explore.do?structureId=1ova), Crystal Structure, Carrell et al., [J. Mol. Biol. (1991)](http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract)<br> SEM Aggregate structure, Zabik et al., [J. Poul. Sci. (1980)](http://ps.oxfordjournals.org/content/60/9/2071.abstract)
 
 ====*
 
@@ -28,10 +28,10 @@ Predict structure from sequence
 ### Sequence $\rightarrow$ Structure $\rightarrow$ Function
 
 !(images/energy_landscape.jpg)  <<height:300; transparent>>
-!(images/ww_fold.m4v) <<height:300>>
+!(images/ww_fold.m4v) <<height:305>>
 Native structure, folding pathways, ...
 
-&& Energy Landscape by [Wolynes](http://rsta.royalsocietypublishing.org/content/363/1827/453), Explicit solvent molecular dynamics folding simulation of WW-domain by [Best](http://pubs.acs.org/doi/abs/10.1021/jp102575b).
+&& Energy Landscape, Wolynes, [Phil. Trans. A (2004)](http://rsta.royalsocietypublishing.org/content/363/1827/453)<br>MD simulation of WW-domain, Best and Mittal, [J. Phys. Chem. B (2010)](http://pubs.acs.org/doi/abs/10.1021/jp102575b)
 
 ====*
 

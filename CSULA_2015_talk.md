@@ -85,9 +85,10 @@ Quantification of plasma HIV RNA, [Nature Comm](http://www.nature.com/ncomms/201
 #### Phase separation calculations, [aggregation](#/aggregation_phase_separation).
 #### Quantitative IDP models, [disorder](#/disorder_idp).
 
-#### Benchmarks in sampling algorithms.
-#### Graph fingerprint and invariant database.
-#### Dependence of topology on sampling.
+#### Benchmarks in sampling algorithms, [BiSA](https://github.com/thoppe/Benchmarks-in-Sampling-Algorithms).
+#### Graph fingerprint and invariant database, [EoFG](https://github.com/thoppe/Encyclopedia-of-Finite-Graphs).
+#### Dependence of topology on sampling, [WL topology](http://thoppe.github.io/Presentation_Telluride_2014_WL_Topology/#/).
+#### RNA structure as [multigraphs](https://github.com/thoppe/RNA-Graph-Prediction).
 
 #### Theoretical liquid state calculations for simple potentials.
 #### Entropic microscopes: free chain calculations of PNA.

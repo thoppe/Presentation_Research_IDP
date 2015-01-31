@@ -30,7 +30,7 @@ _Need a way of validating model._
 ### Experimental Measurements
 Second virial coefficient, $B_{2}$, measurement 
 using light scattering at different pH.
-!(images/macrocharge/exp_B22_1OVA.png) <<height:550px;>>  Dotted-line: Hard sphere potential.
+!(images/macrocharge/exp_B22_1OVA.png) <<height:550px;>>  Dotted-line: Hard sphere potential. [Good enough](http://www.ncbi.nlm.nih.gov/pubmed/23260428) for sickle cell hemoglobin!
 
 =====*
 

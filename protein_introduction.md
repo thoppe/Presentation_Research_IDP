@@ -6,9 +6,9 @@
     LQPSSVDSQT AMVLVNAIVF KGLWEKAFKD EDTQAMPFRV TEQESKPVQM MYQIGLFRVA SMASEKMKIL ELPFASGTMS 
     MLVLLPDEVS GLEQLESIIN FEKLTEWTSS NVMEERKIKV YLPRMKMEEK YNLTSVLMAM GITDVFSSSA NLSGISSAES 
     LKISQAVHAA HAEINEAGRE VVGGAEAGVD AASVSEEFRA DHPFLFCIKH IATNAVLFFG RCVSP
-!(images/1ova/1ova_cartoon.png Secondary structure<br>helices [red], sheets [blue]) <<height:340;transparent>>
-!(images/1ova/1ova_spheres.png Tertiary structure<br>3D structure) <<height:340;transparent>>
-!(images/1ova/Ovalbummin_aggregate.gif Higher-order structure<br>complexes, aggregation) <<height:340;transparent>>
+!(images/1ova/1ova_cartoon.png) <<height:340;transparent>>  Secondary structure<br>helices [red], sheets [blue
+!(images/1ova/1ova_spheres.png) <<height:340;transparent>>  Tertiary structure<br>3D structure
+!(images/1ova/Ovalbummin_aggregate.gif) <<height:340;transparent>>  Higher-order structure<br>complexes, aggregation
 
 
 && Ovalbumin, Egg white protein [PDB:1OVA](http://www.rcsb.org/pdb/explore.do?structureId=1ova), Crystal Structure resolved by [Carrell](http://www.ncbi.nlm.nih.gov/pubmed/1942038?dopt=Abstract), SEM Aggregate structure by [Johnson](http://ps.oxfordjournals.org/content/60/9/2071.abstract)

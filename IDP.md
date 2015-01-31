@@ -5,7 +5,7 @@ Solving the structure was paramount for understanding the function.
 
 <br>
 ### Unexpected: disorder is abundant!
-!(images/yeast_grouping_gsponer-2008.jpg Grouping proteins in the yeast proteome, <a href="http://www.ncbi.nlm.nih.gov/pubmed/19039133">Gsponer</a>)<<height:500;transparent>>
+!(images/yeast_grouping_gsponer-2008.jpg)<<height:500;transparent>>  Grouping proteins in the yeast proteome, [Gsponer](http://www.ncbi.nlm.nih.gov/pubmed/19039133)
 
 ====*
 
@@ -16,9 +16,9 @@ Solving the structure was paramount for understanding the function.
 + Different *primary structure* (residue propensity)
 + More charged, less hydrophobic and aromatic residues
 |### Binding
-!(images/1BRS_barnase_barstar/1BRS_complex.png Not disordered, Lock and Key<br>Barnase-Barstar complex) <<height:300;transparent>>
-!(images/1L8C_HIF1_CBP/1L8C.png Disorder-to-order<br>Hif-1 a/CBP) <<height:300;transparent>>
-!(images/SIC1_disordered_protein_mittag.png Always disordered<br>SIC1 binding to CDC4)<<height:300;transparent>>
+!(images/1BRS_barnase_barstar/1BRS_complex.png)  <<height:300;transparent>> Not disordered, Lock and Key<br>Barnase-Barstar complex
+!(images/1L8C_HIF1_CBP/1L8C.png) <<height:300;transparent>> Disorder-to-order<br>Hif-1 a/CBP
+!(images/SIC1_disordered_protein_mittag.png) <<height:300;transparent>> Always disordered<br>SIC1 binding to CDC4
 ====*
 
 |### Theory
@@ -97,7 +97,8 @@ MF Energy distributions: Physically reasonable
 + Measure binding *specificity* of protein to surfaces.
 
 
-!(images/yeast_network_interaction.jpg Example network: Protein-protein interactions in yeast, <i>S. cerevisiae</i>.)
+!(images/yeast_network_interaction.jpg) Example network: Protein-protein interactions in yeast, _S. cerevisiae_.
+
 
 % [Yeast interactions](http://www.ncbi.nlm.nih.gov/pubmed/11101803)
 
@@ -130,20 +131,20 @@ structures in protein network.
 
 ====+
 
-!(images/small_lattice/7.png PDB:1B8A) <<height:150; transparent>>
-!(images/small_lattice/2.png 1B0B) <<height:150; transparent>>
-!(images/small_lattice/3.png 1BQ8) <<height:150; transparent>>
-!(images/small_lattice/4.png 1DQP) <<height:150; transparent>>
-!(images/small_lattice/5.png 1DOI) <<height:150; transparent>>
-!(images/small_lattice/6.png 1C4Q) <<height:150; transparent>> 
+!(images/small_lattice/7.png) <<height:150; transparent>> PDB:1B8A
+!(images/small_lattice/2.png) <<height:150; transparent>> 1B0B
+!(images/small_lattice/3.png) <<height:150; transparent>> 1BQ8
+!(images/small_lattice/4.png) <<height:150; transparent>> 1DQP
+!(images/small_lattice/5.png) <<height:150; transparent>> 1DOI
+!(images/small_lattice/6.png) <<height:150; transparent>> 1C4Q
 
 
-!(images/small_lattice/1.png 1ARB) <<height:150; transparent>>
-!(images/small_lattice/8.png 1BXU) <<height:150; transparent>>
-!(images/small_lattice/9.png 1CC8) <<height:150; transparent>>
-!(images/small_lattice/10.png 1CJC) <<height:150; transparent>>
-!(images/small_lattice/11.png 1DFU) <<height:150; transparent>>
-!(images/small_lattice/12.png 1DMG) <<height:150; transparent>>
+!(images/small_lattice/1.png) <<height:150; transparent>> 1ARB
+!(images/small_lattice/8.png) <<height:150; transparent>> 1BXU
+!(images/small_lattice/9.png) <<height:150; transparent>> 1CC8
+!(images/small_lattice/10.png) <<height:150; transparent>> 1CCJ
+!(images/small_lattice/11.png) <<height:150; transparent>> 1DFU
+!(images/small_lattice/12.png) <<height:150; transparent>> 1DMG
 
 _What's next?_ Add structure to mean field calculations. 
 Lattices may be optimal for IDP's, they can reproduce native-energies but quickly sample extended conformational space.

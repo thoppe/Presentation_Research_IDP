@@ -26,12 +26,12 @@ How do we predict phase separations of protein solutions?
 ====*
 ### Acknowledgments:
 #### Laboratory of Chemical Physics
-!(images/people/robert.jpg Robert Best) <<height:225>>
-!(images/people/wenwei.jpg Wenwei Zheng) <<height:225>>
+!(images/people/robert.jpg) <<height:225>>  Robert Best
+!(images/people/wenwei.jpg) <<height:225>>  Wenwei Zheng
 
 ####  Laboratory of Biochemistry and Genetics
-!(images/people/minton.jpg Allen Minton) <<height:225>>
-!(images/people/di.jpg Di Wu)     <<height:225>>
+!(images/people/minton.jpg) <<height:225>>  Allen Minton
+!(images/people/di.jpg)     <<height:225>>  Di Wu
 *_Support provided by the Intramural Research Division of the NIDDK, NIH._
 
 ===== [introduction_to_proteins]
@@ -68,15 +68,15 @@ Integer sequence discovery from small graphs, [Discrete Math.](http://arxiv.org/
 Dependence of Internal Friction on Folding Mechanism, [JACS](http://pubs.acs.org/journal/jacsat) (submitted).
 Quantification of plasma HIV RNA, [Nature Comm](http://www.nature.com/ncomms/2014/141006/ncomms6079/full/ncomms6079.html).
 %
-%!(images/other_research/crowding_all.png Minton: <i>NIH Physical Biochemistry</i>) <<height:250>>
-%!(images/other_research/nanoscaffolds.jpeg Zhao: <i>NIH Bioorganic Chemistry</i>) <<height:250>>
-%!(images/other_research/combined_subgraphs2.png Petrone:  <i>Univ. Maryland</i>) <<height:250>>
-!(images/other_research/crowding_all.png Allen Minton) <<height:250>>
-!(images/other_research/nanoscaffolds.jpeg Andrew Dix, Daniel Appella, et. al.) <<height:250>>
-!(images/other_research/combined_subgraphs2.png Anna Petrone) <<height:250>>
+%!(images/other_research/crowding_all.png) <<height:250>> Minton: _NIH Physical Biochemistry_
+%!(images/other_research/nanoscaffolds.jpeg) <<height:250>> Zhao: _NIH Bioorganic Chemistry_
+%!(images/other_research/combined_subgraphs2.png) <<height:250>> Petrone: _Univ. Maryland_
+!(images/other_research/crowding_all.png) <<height:250>>  Allen Minton
+!(images/other_research/nanoscaffolds.jpeg) <<height:250>>  Andrew Dix, Daniel Appella, et. al
+!(images/other_research/combined_subgraphs2.png) <<height:250>>  Anna Petrone
 
-!(images/other_research/internal_friction.jpg Robert Best, Wenwei Zheng) <<height:150>>
-!(images/other_research/hiv_detection.jpg Zhao, Daniel Appella, et. al.) <<height:150>>
+!(images/other_research/internal_friction.jpg) <<height:150>>  Robert Best, Wenwei Zheng
+!(images/other_research/hiv_detection.jpg) <<height:150>>  Zhao, Daniel Appella, et. al.
 
 ====
 <br><br><br><br>

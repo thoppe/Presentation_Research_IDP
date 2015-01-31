@@ -22,6 +22,7 @@ view:
 	chromium-browser index.html
 clean:
 	rm -rvf index.html
+	rm -rvf .render_cache/
 
 push:
 	git status

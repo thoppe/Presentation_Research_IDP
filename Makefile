@@ -1,13 +1,25 @@
-title  = "Multiscale protein modeling Disorder & aggregation"
+title1  = "Multiscale protein modeling Disorder & aggregation"
+title2  = "Mean-field lattice-model IDP"
 author = "Travis Hoppe"
-target = "CSULA_2015_talk.md"
+target1 = "CSULA_2015_talk.md"
+target2 = "biophysical_2015_conf.md"
+
+target = $(target2)
+title  = $(title2)
 
 python_exec    = python
 md2reveal_exec = md2reveal/md2reveal.py
 
 args = --html_title $(title) --html_author $(author) 
+
 all:
-	$(python_exec) $(md2reveal_exec) $(target) --output index.html $(args)
+	make biophys
+
+CSULA:
+	$(python_exec) $(md2reveal_exec) $(target1) --output index.html $(args)
+
+biophys:
+	$(python_exec) $(md2reveal_exec) $(target2) --output biophys_index.html $(args)
 
 edit:
 	emacs $(target) &

@@ -25,15 +25,15 @@ Laboratory of Chemical Physics ([LCP](http://www.niddk.nih.gov/research-funding/
 !(images/SIC1_disordered_protein_mittag.png) <<height:300;transparent>> Always disordered<br>SIC1 binding to CDC4
 ====*
 
-|### Theory
-+ What advantages do IDPs have over traditional proteins?
-+ Recognition that the cellular environment is a crowded place.
-
-
 |### Function
 + Linkers (entropic chains), Chaperones, HIV transcription [(TAT)](http://www.ncbi.nlm.nih.gov/pubmed/16423825)
 + Often found in signaling pathways, centers of protein hubs
 + Binding *specificity*, with *lower affinity*
+
+
+|### Questions
++ What advantages do IDPs have over traditional proteins?
++ How to incorporate the crowded cellular environment?
 
 
 |### Modeling
@@ -56,18 +56,6 @@ Residue-residue interactions, quasi-chemical lattice-gas
 && Potentials constructed from Top 8000 Protein Database, [Richardson Group](http://kinemage.biochem.duke.edu/databases/top8000.php)
 
 
-====*<<transition:fade>>
-
-### Residue-residue interaction matrix, MJ
-!(images/mj_potential/MJ_matrix.png)  <<transparent; height:700>>
-
-&& Other statistical potentials: [Tanaka and Scheraga](http://pubs.acs.org/doi/abs/10.1021/ma60054a013) (1976), [Spil](http://www.ncbi.nlm.nih.gov/pubmed/2359125) (1990), [Miyazawa and Jernigan](http://www.ncbi.nlm.nih.gov/pubmed/8604144) (1996),<br>[Betancourt and Thirumalai](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/) (1999), [Skolnick, Kolinski and Ortiz](http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract) (2000)
-
-====*<<transition:fade>>
-### MJ matrix reveals biophysical structure
-!(images/mj_potential/MJ_matrix_remapped.png)  <<transparent; height:700>>
-&& H (hydrophobic), P (polar), C (charged)
-%Analysis of Statistical Potentials by [Li](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.765).
 ====*
 ### Statistical potentials have predictive power
 
@@ -77,9 +65,16 @@ Residue-residue interactions, quasi-chemical lattice-gas
 
 
 
-
 && [1] _Coarse-grained models for simulations of multiprotein complexes_,  Kim & Hummer, [J Mol Biol(375):1416-33](http://www.ncbi.nlm.nih.gov/pubmed/18083189?dopt=Abstract)<br> [2] _Properties of Integral Membrane Protein Structures_, Ulmschneider, Sansom & Nola, [Proteins(59):252-265](http://onlinelibrary.wiley.com/doi/10.1002/prot.20334/abstract)<br>[3] _Pairing preferences at protein-protein interfaces_, Glaser, et al., [Proteins:43(2) 89-102](http://www.ncbi.nlm.nih.gov/pubmed/11276079)
-====
+====*
+
+### Residue-residue interaction matrix, MJ
+!(images/mj_potential/MJ_matrix.png)  <<transparent; height:700>>
+
+&& Other statistical potentials: [Tanaka and Scheraga](http://pubs.acs.org/doi/abs/10.1021/ma60054a013) (1976), [Spil](http://www.ncbi.nlm.nih.gov/pubmed/2359125) (1990), [Miyazawa and Jernigan](http://www.ncbi.nlm.nih.gov/pubmed/8604144) (1996),<br>[Betancourt and Thirumalai](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144252/) (1999), [Skolnick, Kolinski and Ortiz](http://onlinelibrary.wiley.com/doi/10.1002/%28SICI%291097-0134%2820000101%2938:1%3C3::AID-PROT2%3E3.0.CO;2-S/abstract) (2000)
+
+====*
+
 
 ### MJ Contact energy, from structure
 # $U_\text{MJ} = \underset{r_i, r_j \text{in contact}}{\sum_{i=1}^N \sum_{j>i}^N E_{ij}} \quad \quad \quad \quad E_{ij} = \mathbf{M}_{\text{res}(i), \text{res}(j)}$
@@ -90,13 +85,13 @@ Residue-residue interactions, quasi-chemical lattice-gas
 # $U_{\text{MF}} = \sum_{\alpha=1}^{20} \sum_{\beta=\alpha}^{20} n_{\text{contact}}(\alpha, \beta) E_{\alpha \beta}$
 ### $n_{\text{contact}}(\alpha, \beta) = X_{\alpha} X_{\beta} e^{-\mathbf{M}_{\alpha \beta}/kT} $
 
-====*
-MJ contact energy reproduces MF energy
-!(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
-
-&& <a href="images/estimationMFMJperN.png">Energy per residue</a> shows good correlation as well.
-
-
+%====*
+%MJ contact energy reproduces MF energy
+%!(images/estimation_MF_MJ.png)       <<transparent; height:700>> 
+%
+%&& <a href="images/estimationMFMJperN.png">Energy per residue</a> shows good correlation as well.
+%
+%
 ====*
 MF Energy distributions: Physically reasonable
 !(images/mean_field_calc/residue_propensity.png)   <<transparent; height:320>>
@@ -113,9 +108,9 @@ MF Energy distributions: Physically reasonable
 + Target protein interacts with a range of possible surfaces.
 + Measure average binding *affinity* of protein to surfaces.
 + Measure binding *specificity* of protein to surfaces.
++ _A priori_ structure is unknown; simplest model first.
 
-
-!(images/yeast_network_interaction.jpg) Example network: Protein-protein interactions in yeast, _S. cerevisiae_<br>Schwikowski & Fields et al., [Nature 2000](http://www.ncbi.nlm.nih.gov/pubmed/11101803).
+!(images/yeast_network_interaction.jpg) Protein-protein interactions in yeast, _S. cerevisiae_<br>Schwikowski & Fields et al., [Nature 2000](http://www.ncbi.nlm.nih.gov/pubmed/11101803).
 
 ====*
 
@@ -141,8 +136,8 @@ structures in protein network.
 ## Binding specificity
 !(images/binding_specificity_1.png) <<transparent; height:700>> 
 ====*
-## MF IDP Summary:
-+ MF models reproduce MJ contact energies. MF IDP's bound to native structures show increased _specificity_ with lower _affinity_.
+## Summary & Future Work
++ MF IDP's bound to native structures show increased<br>_specificity_ with lower _affinity_.
 
 ====+
 
@@ -169,7 +164,15 @@ Lattices may be optimal for IDP's, they can reproduce native-energies but quickl
 # Thank you.
 Questions?
 
-##### Laboratory of Chemical Physics
+_Laboratory of Chemical Physics_
 !(images/people/robert.jpg) <<height:225>>  Robert Best
-!(images/people/travis.png) <<height:225>>  Travis Hoppe
 !(images/people/wenwei.jpg) <<height:225>>  Wenwei Zheng
+!(images/people/PengfeiTian.jpg) <<height:225>>  Pengfei Tian
+!(images/people/JanDomanski.jpg) <<height:225>>  Jan Domanski
+!(images/people/travis.png) <<height:225>>  Travis Hoppe
+
+
+
+!(images/logo/HHS.svg) <<height:90; transparent>>
+!(images/logo/NIH_NIDDK_Master_Logo_Black.png) <<height:90; transparent>>
+

@@ -17,7 +17,6 @@ Laboratory of Chemical Physics ([LCP](http://www.niddk.nih.gov/research-funding/
 ## Intrinsically disordered proteins
 |### Structure
 + Lack *tertiary structure* (disorder!)
-+ Still may form secondary structure
 + Different *primary structure* (residue propensity)
 + More charged, less hydrophobic and aromatic residues
 |### Binding
@@ -32,15 +31,15 @@ Laboratory of Chemical Physics ([LCP](http://www.niddk.nih.gov/research-funding/
 
 
 |### Function
-+ Often found in signaling pathways, centers of protein hubs
 + Linkers (entropic chains), Chaperones, HIV transcription [(TAT)](http://www.ncbi.nlm.nih.gov/pubmed/16423825)
++ Often found in signaling pathways, centers of protein hubs
 + Binding *specificity*, with *lower affinity*
 
 
 |### Modeling
 ## IDPs: Folding $\Rightarrow$ Sampling
 
-_Goal: Develop a model for IDP interactions._
+_Goal: Develop a model for IDP binding interactions._
 
 ====
 
@@ -69,6 +68,17 @@ Residue-residue interactions, quasi-chemical lattice-gas
 !(images/mj_potential/MJ_matrix_remapped.png)  <<transparent; height:700>>
 && H (hydrophobic), P (polar), C (charged)
 %Analysis of Statistical Potentials by [Li](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.765).
+====*
+### Statistical potentials have predictive power
+
+!(images/ubiquitin_complex.jpg) <<height:300>> Ubiquitin binding to U1M1 [1]
+!(images/membrane_example_potential.jpg) <<height:300>> Implicit membrane potentials [2]
+!(images/example_protein_protein_interface_calc.jpg) <<height:300>> Protein-Protein interactions [3]
+
+
+
+
+&& [1] _Coarse-grained models for simulations of multiprotein complexes_,  Kim & Hummer, [J Mol Biol(375):1416-33](http://www.ncbi.nlm.nih.gov/pubmed/18083189?dopt=Abstract)<br> [2] _Properties of Integral Membrane Protein Structures_, Ulmschneider, Sansom & Nola, [Proteins(59):252-265](http://onlinelibrary.wiley.com/doi/10.1002/prot.20334/abstract)<br>[3] _Pairing preferences at protein-protein interfaces_, Glaser, et al., [Proteins:43(2) 89-102](http://www.ncbi.nlm.nih.gov/pubmed/11276079)
 ====
 
 ### MJ Contact energy, from structure
@@ -86,7 +96,8 @@ MJ contact energy reproduces MF energy
 
 && <a href="images/estimationMFMJperN.png">Energy per residue</a> shows good correlation as well.
 
-====
+
+====*
 MF Energy distributions: Physically reasonable
 !(images/mean_field_calc/residue_propensity.png)   <<transparent; height:320>>
 !(images/mean_field_calc/average_self_energy.png)  <<transparent; height:320>>
@@ -152,3 +163,13 @@ structures in protein network.
 
 _What's next?_ Add structure to mean field calculations. 
 Lattices may be optimal for IDP's, they can reproduce native-energies but quickly sample extended conformational space.
+
+====*
+
+# Thank you.
+Questions?
+
+##### Laboratory of Chemical Physics
+!(images/people/robert.jpg) <<height:225>>  Robert Best
+!(images/people/travis.png) <<height:225>>  Travis Hoppe
+!(images/people/wenwei.jpg) <<height:225>>  Wenwei Zheng

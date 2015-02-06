@@ -31,7 +31,8 @@ check:
 	find . -maxdepth 1 -name "*.md" -exec aspell check {} \;
 
 view:
-	chromium-browser index.html
+	chromium-browser biophys_index.html
+
 clean:
 	rm -rvf index.html
 	rm -rvf .render_cache/

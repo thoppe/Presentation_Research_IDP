@@ -4,13 +4,14 @@
 *[Travis Hoppe](http://thoppe.github.io/)*, Robert Best
 % <div style="font-size:60%;display:block;">[https://github.com/thoppe/Presentation_Research_IDP](https://github.com/thoppe/Presentation_Research_IDP)</div>
 ----------
-Biophysical Society Meeting, 2015
+[Biophysical Society Meeting](http://www.biophysics.org/2015meeting/), 2015
 
 
 National Institutes of Health ([NIH](http://www.nih.gov/))
 National Institute of Diabetes and Digestive and Kidney Diseases ([NIDDK](http://www.niddk.nih.gov))
 Laboratory of Chemical Physics ([LCP](http://www.niddk.nih.gov/research-funding/at-niddk/labs-branches/LCP/Pages/about.aspx)), Theoretical Biophysical Chemistry ([TBC](http://spin.niddk.nih.gov/best/home.html))
 
+&& Slide source at [https://github.com/thoppe/Presentation_Research_IDP](https://github.com/thoppe/Presentation_Research_IDP)
 
 ====
 
